@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ru.sergeev.school.entities</OriginalElement>
+  <nodes>
+    <node x="1831.752732799614" y="1202.0">ru.sergeev.school.entities.User</node>
+    <node x="1808.9558200672811" y="1500.0">ru.sergeev.school.services.impl.UserServiceImpl</node>
+    <node x="2126.6900802669584" y="536.0">ru.sergeev.school.entities.OtherInfo</node>
+    <node x="463.767323856702" y="0.0">ru.sergeev.school.entities.Mark</node>
+    <node x="846.6030982905983" y="874.0">ru.sergeev.school.rest.GradeRest</node>
+    <node x="1119.3927240198038" y="1202.0">ru.sergeev.school.services.ScheduleService</node>
+    <node x="840.8303765524597" y="1202.0">ru.sergeev.school.repository.StudentRepository</node>
+    <node x="212.9236111111113" y="1202.0">ru.sergeev.school.repository.SubjectRepository</node>
+    <node x="3203.275460072341" y="1202.0">ru.sergeev.school.services.MarkService</node>
+    <node x="591.6736111111111" y="705.0">ru.sergeev.school.services.impl.DayServiceImpl</node>
+    <node x="154.0" y="1574.0">ru.sergeev.school.configuration.RestConfig</node>
+    <node x="2031.6641534006144" y="1411.0">ru.sergeev.school.services.impl.OtherInfoServiceImpl</node>
+    <node x="1546.4198797575878" y="1023.0">ru.sergeev.school.services.StudentService</node>
+    <node x="2254.752732799614" y="1202.0">ru.sergeev.school.repository.TeacherRepository</node>
+    <node x="1104.375691862153" y="1411.0">ru.sergeev.school.rest.ScheduleRest</node>
+    <node x="2078.752732799614" y="1202.0">ru.sergeev.school.repository.OtherInfoRepository</node>
+    <node x="2912.6035473400084" y="536.0">ru.sergeev.school.services.impl.LessonServiceImpl</node>
+    <node x="2835.275460072341" y="427.0">ru.sergeev.school.repository.LessonRepository</node>
+    <node x="1922.752732799614" y="1202.0">ru.sergeev.school.services.OtherInfoService</node>
+    <node x="1034.8927240198038" y="705.0">ru.sergeev.school.repository.GradeRepository</node>
+    <node x="387.9236111111113" y="874.0">ru.sergeev.school.repository.MarkRepository</node>
+    <node x="971.6099520618301" y="427.0">ru.sergeev.school.entities.Schedule</node>
+    <node x="0.0" y="1411.0">ru.sergeev.school.rest.SubjectRest</node>
+    <node x="2480.275460072341" y="1202.0">ru.sergeev.school.services.TeacherService</node>
+    <node x="2321.4198797575878" y="1411.0">ru.sergeev.school.services.impl.TeacherServiceImpl</node>
+    <node x="1242.375691862153" y="1411.0">ru.sergeev.school.services.impl.StudentServiceImpl</node>
+    <node x="1469.2734136002916" y="1411.0">ru.sergeev.school.services.impl.NameServiceImpl</node>
+    <node x="967.6030982905983" y="874.0">ru.sergeev.school.services.impl.GradeServiceImpl</node>
+    <node x="989.9849520618301" y="536.0">ru.sergeev.school.entities.Grade</node>
+    <node x="2047.8308200672814" y="874.0">ru.sergeev.school.entities.Name</node>
+    <node x="802.7141187284967" y="268.0">ru.sergeev.school.entities.Day</node>
+    <node x="417.2652777777778" y="129.0">ru.sergeev.school.entities.Subject</node>
+    <node x="673.436145783229" y="1411.0">ru.sergeev.school.services.impl.ScheduleServiceImpl</node>
+    <node x="1402.356746933625" y="1202.0">ru.sergeev.school.services.NameService</node>
+    <node x="1630.2734136002916" y="1411.0">ru.sergeev.school.repository.UserRepository</node>
+    <node x="1808.5234136002916" y="1411.0">ru.sergeev.school.services.UserService</node>
+    <node x="2476.1124732905982" y="268.0">ru.sergeev.school.entities.ScheduleRow</node>
+    <node x="875.7260573531371" y="705.0">ru.sergeev.school.services.GradeService</node>
+    <node x="132.20833333333348" y="1411.0">ru.sergeev.school.services.impl.SubjectServiceImpl</node>
+    <node x="3245.6087934056745" y="1411.0">ru.sergeev.school.rest.MarkRest</node>
+    <node x="2639.275460072341" y="1202.0">ru.sergeev.school.repository.ScheduleRowRepository</node>
+    <node x="2425.190080266958" y="1023.0">ru.sergeev.school.entities.Teacher</node>
+    <node x="665.9236111111111" y="536.0">ru.sergeev.school.repository.DayRepository</node>
+    <node x="331.4361457832292" y="1411.0">ru.sergeev.school.services.impl.MarkServiceImpl</node>
+    <node x="3092.775460072341" y="427.0">ru.sergeev.school.services.ScheduleRowService</node>
+    <node x="2541.3624732905982" y="129.0">ru.sergeev.school.entities.Lesson</node>
+    <node x="1791.3984136002916" y="705.0">ru.sergeev.school.entities.Student</node>
+    <node x="31.25" y="1202.0">ru.sergeev.school.services.SubjectService</node>
+    <node x="1539.356746933625" y="1202.0">ru.sergeev.school.repository.NameRepository</node>
+    <node x="2950.775460072341" y="268.0">ru.sergeev.school.services.LessonService</node>
+    <node x="1700.752732799614" y="1202.0">ru.sergeev.school.rest.StudentRest</node>
+    <node x="484.25694444444457" y="1202.0">ru.sergeev.school.repository.ScheduleRepository</node>
+    <node x="539.9236111111111" y="427.0">ru.sergeev.school.services.DayService</node>
+    <node x="0.0" y="1574.0">ru.sergeev.school.Application</node>
+    <node x="2763.2494252121332" y="1411.0">ru.sergeev.school.services.impl.ScheduleRowServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ru.sergeev.school.services.impl.ScheduleRowServiceImpl" target="ru.sergeev.school.services.ScheduleRowService">
+      <point x="67.5" y="-14.5" />
+      <point x="2920.7494252121332" y="1381.0" />
+      <point x="3170.775460072341" y="1381.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.LessonRepository" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="-35.0" y="-14.5" />
+      <point x="2870.275460072341" y="387.0" />
+      <point x="2582.3624732905982" y="387.0" />
+      <point x="46.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRepository" target="ru.sergeev.school.entities.Schedule">
+      <point x="0.0" y="-14.5" />
+      <point x="560.2569444444446" y="1182.0" />
+      <point x="540.4236111111111" y="1182.0" />
+      <point x="540.4236111111111" y="486.0" />
+      <point x="984.7008611527392" y="486.0" />
+      <point x="-34.90909090909088" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.GradeRepository" target="ru.sergeev.school.entities.Grade">
+      <point x="0.0" y="-14.5" />
+      <point x="1102.3927240198038" y="685.0" />
+      <point x="1035.5618751387533" y="685.0" />
+      <point x="6.076923076923094" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Teacher" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="18.75" y="-14.5" />
+      <point x="2488.940080266958" y="973.0" />
+      <point x="2531.3624732905982" y="973.0" />
+      <point x="-4.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRowRepository" target="ru.sergeev.school.entities.Teacher">
+      <point x="-65.625" y="-14.5" />
+      <point x="2661.150460072341" y="1172.0" />
+      <point x="2511.099171176049" y="1172.0" />
+      <point x="40.90909090909088" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.DayServiceImpl" target="ru.sergeev.school.entities.Day">
+      <point x="-16.125" y="-14.5" />
+      <point x="640.0486111111111" y="685.0" />
+      <point x="655.4236111111111" y="685.0" />
+      <point x="655.4236111111111" y="337.0" />
+      <point x="823.9641187284967" y="337.0" />
+      <point x="-12.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.GradeService" target="ru.sergeev.school.entities.Grade">
+      <point x="0.0" y="-14.5" />
+      <point x="933.7260573531371" y="665.0" />
+      <point x="1017.331105907984" y="665.0" />
+      <point x="-12.153846153846132" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.MarkServiceImpl" target="ru.sergeev.school.repository.SubjectRepository">
+      <point x="-45.33333333333337" y="-14.5" />
+      <point x="354.10281244989574" y="1291.0" />
+      <point x="338.0486111111113" y="1291.0" />
+      <point x="53.625" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.TeacherRepository" target="ru.sergeev.school.entities.Teacher">
+      <point x="36.5" y="-14.5" />
+      <point x="2364.252732799614" y="1162.0" />
+      <point x="2478.3718984487764" y="1162.0" />
+      <point x="8.18181818181813" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.OtherInfo" target="ru.sergeev.school.entities.Student">
+      <point x="-13.199999999999932" y="14.5" />
+      <point x="2162.990080266958" y="675.0" />
+      <point x="1869.2734136002916" y="675.0" />
+      <point x="33.375" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.SubjectServiceImpl" target="ru.sergeev.school.entities.Schedule">
+      <point x="-9.25" y="-14.5" />
+      <point x="196.95833333333348" y="1391.0" />
+      <point x="189.45833333333348" y="1391.0" />
+      <point x="189.45833333333348" y="476.0" />
+      <point x="975.9735884254665" y="476.0" />
+      <point x="-43.636363636363626" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.UserService" target="ru.sergeev.school.entities.User">
+      <point x="0.0" y="-14.5" />
+      <point x="1862.5234136002916" y="1351.0" />
+      <point x="1867.252732799614" y="1351.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Student" target="ru.sergeev.school.entities.Grade">
+      <point x="-33.375" y="-14.5" />
+      <point x="1802.5234136002916" y="605.0" />
+      <point x="1053.7926443695223" y="605.0" />
+      <point x="24.307692307692264" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.MarkRepository" target="ru.sergeev.school.entities.Student">
+      <point x="43.666666666666686" y="-14.5" />
+      <point x="497.09027777777806" y="764.0" />
+      <point x="1794.1796636002916" y="764.0" />
+      <point x="-41.71875" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.OtherInfoServiceImpl" target="ru.sergeev.school.services.OtherInfoService">
+      <point x="-53.33333333333334" y="-14.5" />
+      <point x="2058.330820067281" y="1351.0" />
+      <point x="1990.752732799614" y="1351.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.MarkService" target="ru.sergeev.school.entities.Mark">
+      <point x="0.0" y="-14.5" />
+      <point x="3259.275460072341" y="69.0" />
+      <point x="530.1134777028558" y="69.0" />
+      <point x="28.84615384615381" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.NameRepository" target="ru.sergeev.school.entities.Teacher">
+      <point x="45.33333333333337" y="-14.5" />
+      <point x="1652.6900802669584" y="1102.0" />
+      <point x="2429.2809893578674" y="1102.0" />
+      <point x="-40.90909090909088" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.MarkServiceImpl" target="ru.sergeev.school.entities.Mark">
+      <point x="-15.111111111111086" y="-14.5" />
+      <point x="384.32503467211814" y="1301.0" />
+      <point x="377.4236111111113" y="1301.0" />
+      <point x="377.4236111111113" y="59.0" />
+      <point x="472.42117001054817" y="59.0" />
+      <point x="-28.84615384615381" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.ScheduleRowServiceImpl" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="22.5" y="-14.5" />
+      <point x="2875.7494252121332" y="1361.0" />
+      <point x="2824.775460072341" y="1361.0" />
+      <point x="2824.775460072341" y="397.0" />
+      <point x="2573.8624732905982" y="397.0" />
+      <point x="38.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRowRepository" target="ru.sergeev.school.entities.Subject">
+      <point x="65.625" y="-14.5" />
+      <point x="2792.400460072341" y="1182.0" />
+      <point x="2777.6660473400084" y="1182.0" />
+      <point x="2777.6660473400084" y="208.0" />
+      <point x="499.91527777777776" y="208.0" />
+      <point x="39.14999999999998" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Name" target="ru.sergeev.school.entities.Student">
+      <point x="-30.0" y="-14.5" />
+      <point x="2057.8308200672814" y="834.0" />
+      <point x="1860.9296636002916" y="834.0" />
+      <point x="25.03125" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Teacher" target="ru.sergeev.school.entities.Name">
+      <point x="-33.75" y="-14.5" />
+      <point x="2436.440080266958" y="963.0" />
+      <point x="2106.29235852882" y="963.0" />
+      <point x="18.461538461538453" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.DayServiceImpl" target="ru.sergeev.school.repository.DayRepository">
+      <point x="48.375" y="-14.5" />
+      <point x="704.5486111111111" y="615.0" />
+      <point x="758.9236111111111" y="615.0" />
+      <point x="31.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.DayRepository" target="ru.sergeev.school.entities.Day">
+      <point x="-31.0" y="-14.5" />
+      <point x="696.9236111111111" y="347.0" />
+      <point x="832.4641187284967" y="347.0" />
+      <point x="-4.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.SubjectRepository" target="ru.sergeev.school.entities.Subject">
+      <point x="-35.75" y="-14.5" />
+      <point x="248.6736111111113" y="248.0" />
+      <point x="447.7152777777778" y="248.0" />
+      <point x="-13.049999999999955" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Student" target="ru.sergeev.school.entities.Name">
+      <point x="36.15625" y="14.5" />
+      <point x="1872.0546636002916" y="814.0" />
+      <point x="2097.8308200672814" y="814.0" />
+      <point x="10.0" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.MarkServiceImpl" target="ru.sergeev.school.repository.StudentRepository">
+      <point x="45.333333333333314" y="-14.5" />
+      <point x="444.7694791165625" y="1341.0" />
+      <point x="895.2053765524597" y="1341.0" />
+      <point x="-18.125" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Mark" target="ru.sergeev.school.entities.Student">
+      <point x="5.769230769230717" y="14.5" />
+      <point x="507.0365546259327" y="109.0" />
+      <point x="1824.7734136002914" y="109.0" />
+      <point x="-11.125" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.StudentRepository" target="ru.sergeev.school.entities.Grade">
+      <point x="-48.33333333333337" y="-14.5" />
+      <point x="864.9970432191263" y="1182.0" />
+      <point x="836.1030982905983" y="1182.0" />
+      <point x="836.1030982905983" y="645.0" />
+      <point x="1005.1772597541378" y="645.0" />
+      <point x="-24.307692307692264" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.GradeServiceImpl" target="ru.sergeev.school.services.GradeService">
+      <point x="-56.0" y="-14.5" />
+      <point x="981.6030982905983" y="754.0" />
+      <point x="972.3927240198037" y="754.0" />
+      <point x="38.66666666666666" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.StudentService" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="-42.0" y="-14.5" />
+      <point x="1567.4198797575878" y="953.0" />
+      <point x="1336.856746933625" y="953.0" />
+      <point x="1336.856746933625" y="645.0" />
+      <point x="2143.1900802669584" y="645.0" />
+      <point x="-33.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.entities.Student">
+      <point x="-23.076923076923094" y="-14.5" />
+      <point x="1294.29876878523" y="1271.0" />
+      <point x="1325.856746933625" y="1271.0" />
+      <point x="1325.856746933625" y="784.0" />
+      <point x="1805.3046636002916" y="784.0" />
+      <point x="-30.59375" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Schedule" target="ru.sergeev.school.entities.Grade">
+      <point x="8.727272727272748" y="14.5" />
+      <point x="1028.337224789103" y="516.0" />
+      <point x="1039.35995206183" y="516.0" />
+      <point x="9.875" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.UserServiceImpl" target="ru.sergeev.school.entities.User">
+      <point x="49.5" y="-14.5" />
+      <point x="1924.4558200672811" y="1480.0" />
+      <point x="1973.8150802669584" y="1480.0" />
+      <point x="1973.8150802669584" y="1351.0" />
+      <point x="1890.9193994662808" y="1351.0" />
+      <point x="23.66666666666663" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Schedule" target="ru.sergeev.school.entities.Day">
+      <point x="-30.0" y="-14.5" />
+      <point x="989.6099520618301" y="337.0" />
+      <point x="849.4641187284967" y="337.0" />
+      <point x="12.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Teacher" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="11.25" y="-14.5" />
+      <point x="2481.440080266958" y="963.0" />
+      <point x="2521.800460072341" y="963.0" />
+      <point x="2521.800460072341" y="645.0" />
+      <point x="2202.5900802669585" y="645.0" />
+      <point x="26.399999999999977" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.services.StudentService">
+      <point x="23.076923076923066" y="-14.5" />
+      <point x="1340.452614939076" y="1311.0" />
+      <point x="1391.856746933625" y="1311.0" />
+      <point x="1391.856746933625" y="1182.0" />
+      <point x="1567.4198797575878" y="1182.0" />
+      <point x="-42.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Name" target="ru.sergeev.school.entities.Teacher">
+      <point x="24.61538461538464" y="14.5" />
+      <point x="2112.4462046826657" y="953.0" />
+      <point x="2443.940080266958" y="953.0" />
+      <point x="-26.25" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="-34.61538461538461" y="-14.5" />
+      <point x="1282.7603072467684" y="1261.0" />
+      <point x="1314.856746933625" y="1261.0" />
+      <point x="1314.856746933625" y="635.0" />
+      <point x="2136.5900802669585" y="635.0" />
+      <point x="-39.60000000000002" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.ScheduleRowServiceImpl" target="ru.sergeev.school.repository.ScheduleRowRepository">
+      <point x="-22.5" y="-14.5" />
+      <point x="2830.7494252121332" y="1371.0" />
+      <point x="2770.525460072341" y="1371.0" />
+      <point x="43.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.TeacherRepository" target="ru.sergeev.school.entities.Name">
+      <point x="-36.5" y="-14.5" />
+      <point x="2291.252732799614" y="993.0" />
+      <point x="2087.8308200672814" y="993.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRepository" target="ru.sergeev.school.entities.Day">
+      <point x="-50.66666666666663" y="-14.5" />
+      <point x="509.59027777777794" y="1182.0" />
+      <point x="529.4236111111111" y="1182.0" />
+      <point x="529.4236111111111" y="317.0" />
+      <point x="806.9641187284967" y="317.0" />
+      <point x="-29.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.entities.Name">
+      <point x="-23.23076923076917" y="-14.5" />
+      <point x="2373.6891105268187" y="1301.0" />
+      <point x="2244.252732799614" y="1301.0" />
+      <point x="2244.252732799614" y="1003.0" />
+      <point x="2081.676973913435" y="1003.0" />
+      <point x="-6.153846153846075" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Subject" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="21.75" y="14.5" />
+      <point x="482.5152777777778" y="228.0" />
+      <point x="2513.2999732905982" y="228.0" />
+      <point x="-22.3125" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.StudentRest" target="ru.sergeev.school.entities.Student">
+      <point x="37.0" y="-14.5" />
+      <point x="1793.7734136002916" y="824.0" />
+      <point x="1827.5546636002916" y="824.0" />
+      <point x="-8.34375" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.StudentRest" target="ru.sergeev.school.services.StudentService">
+      <point x="-37.0" y="-14.5" />
+      <point x="1719.252732799614" y="1082.0" />
+      <point x="1609.4198797575878" y="1082.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.StudentRepository" target="ru.sergeev.school.entities.Name">
+      <point x="48.33333333333337" y="-14.5" />
+      <point x="961.6637098857931" y="1182.0" />
+      <point x="1336.856746933625" y="1182.0" />
+      <point x="1336.856746933625" y="963.0" />
+      <point x="2050.9077431442042" y="963.0" />
+      <point x="-36.923076923076906" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Mark" target="ru.sergeev.school.entities.Subject">
+      <point x="-5.769230769230717" y="14.5" />
+      <point x="495.49809308747126" y="99.0" />
+      <point x="471.6402777777778" y="99.0" />
+      <point x="10.875" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.MarkRepository" target="ru.sergeev.school.entities.Mark">
+      <point x="-43.66666666666674" y="-14.5" />
+      <point x="409.75694444444457" y="854.0" />
+      <point x="396.4748931623931" y="854.0" />
+      <point x="396.4748931623931" y="69.0" />
+      <point x="478.1904007797789" y="69.0" />
+      <point x="-23.076923076923094" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Lesson" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="0.0" y="14.5" />
+      <point x="2583.3624732905982" y="248.0" />
+      <point x="2587.6749732905982" y="248.0" />
+      <point x="52.0625" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRepository" target="ru.sergeev.school.entities.Grade">
+      <point x="50.66666666666663" y="-14.5" />
+      <point x="610.9236111111112" y="1182.0" />
+      <point x="731.1736111111111" y="1182.0" />
+      <point x="731.1736111111111" y="625.0" />
+      <point x="993.0234136002916" y="625.0" />
+      <point x="-36.46153846153845" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.entities.Name">
+      <point x="11.538461538461519" y="-14.5" />
+      <point x="1328.9141534006146" y="1301.0" />
+      <point x="1380.856746933625" y="1301.0" />
+      <point x="1380.856746933625" y="983.0" />
+      <point x="2063.2154354518966" y="983.0" />
+      <point x="-24.61538461538464" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.LessonServiceImpl" target="ru.sergeev.school.entities.Lesson">
+      <point x="54.375" y="-14.5" />
+      <point x="3039.4785473400084" y="516.0" />
+      <point x="3082.275460072341" y="516.0" />
+      <point x="3082.275460072341" y="178.0" />
+      <point x="2619.3624732905982" y="178.0" />
+      <point x="36.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.entities.Teacher">
+      <point x="23.230769230769283" y="-14.5" />
+      <point x="2420.150648988357" y="1341.0" />
+      <point x="2451.275460072341" y="1341.0" />
+      <point x="2451.275460072341" y="1172.0" />
+      <point x="2486.5537166305944" y="1172.0" />
+      <point x="16.363636363636374" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.TeacherService" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="42.33333333333337" y="-14.5" />
+      <point x="2586.1087934056745" y="1182.0" />
+      <point x="2582.9754600723413" y="1182.0" />
+      <point x="2582.9754600723413" y="635.0" />
+      <point x="2209.1900802669584" y="635.0" />
+      <point x="33.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.ScheduleRow" target="ru.sergeev.school.entities.Lesson">
+      <point x="7.4375" y="-14.5" />
+      <point x="2543.0499732905982" y="248.0" />
+      <point x="2547.3624732905982" y="248.0" />
+      <point x="-36.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.GradeRest" target="ru.sergeev.school.services.GradeService">
+      <point x="7.105427357601002E-15" y="-14.5" />
+      <point x="897.1030982905983" y="754.0" />
+      <point x="895.0593906864705" y="754.0" />
+      <point x="-38.666666666666664" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.ScheduleServiceImpl" target="ru.sergeev.school.entities.Grade">
+      <point x="31.399999999999977" y="-14.5" />
+      <point x="783.336145783229" y="1321.0" />
+      <point x="815.7313034188035" y="1321.0" />
+      <point x="815.7313034188035" y="635.0" />
+      <point x="999.1003366772147" y="635.0" />
+      <point x="-30.38461538461536" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.services.TeacherService">
+      <point x="46.46153846153845" y="-14.5" />
+      <point x="2443.3814182191263" y="1361.0" />
+      <point x="2543.775460072341" y="1361.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.SubjectServiceImpl" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="-27.75" y="-14.5" />
+      <point x="178.45833333333348" y="1391.0" />
+      <point x="176.75" y="1391.0" />
+      <point x="176.75" y="357.0" />
+      <point x="2480.3624732905982" y="357.0" />
+      <point x="-55.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Teacher" target="ru.sergeev.school.entities.User">
+      <point x="-8.18181818181813" y="14.5" />
+      <point x="2462.00826208514" y="1142.0" />
+      <point x="1898.315232799614" y="1142.0" />
+      <point x="31.0625" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.UserRepository" target="ru.sergeev.school.entities.User">
+      <point x="0.0" y="-14.5" />
+      <point x="1693.7734136002916" y="1351.0" />
+      <point x="1843.5860661329475" y="1351.0" />
+      <point x="-23.66666666666663" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.ScheduleServiceImpl" target="ru.sergeev.school.services.ScheduleService">
+      <point x="62.799999999999955" y="-14.5" />
+      <point x="814.736145783229" y="1351.0" />
+      <point x="1141.5593906864706" y="1351.0" />
+      <point x="-44.333333333333314" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.UserServiceImpl" target="ru.sergeev.school.repository.UserRepository">
+      <point x="-16.5" y="-14.5" />
+      <point x="1858.4558200672811" y="1470.0" />
+      <point x="1725.5234136002916" y="1470.0" />
+      <point x="31.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.ScheduleRest" target="ru.sergeev.school.services.ScheduleService">
+      <point x="-7.105427357601002E-15" y="-14.5" />
+      <point x="1163.375691862153" y="1371.0" />
+      <point x="1230.226057353137" y="1371.0" />
+      <point x="44.33333333333337" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.UserServiceImpl" target="ru.sergeev.school.services.UserService">
+      <point x="16.5" y="-14.5" />
+      <point x="1891.4558200672811" y="1460.0" />
+      <point x="1862.5234136002916" y="1460.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.SubjectServiceImpl" target="ru.sergeev.school.services.SubjectService">
+      <point x="-64.75" y="-14.5" />
+      <point x="141.45833333333348" y="1391.0" />
+      <point x="134.58333333333348" y="1391.0" />
+      <point x="41.33333333333337" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.OtherInfo" target="ru.sergeev.school.entities.Teacher">
+      <point x="19.800000000000068" y="14.5" />
+      <point x="2195.990080266958" y="655.0" />
+      <point x="2473.940080266958" y="655.0" />
+      <point x="3.75" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.ScheduleRowService" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="0.0" y="-14.5" />
+      <point x="3170.775460072341" y="377.0" />
+      <point x="2590.8624732905982" y="377.0" />
+      <point x="55.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.StudentService" target="ru.sergeev.school.entities.Name">
+      <point x="42.0" y="-14.5" />
+      <point x="1651.4198797575878" y="993.0" />
+      <point x="2069.369281605743" y="993.0" />
+      <point x="-18.461538461538453" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.DayService" target="ru.sergeev.school.entities.Day">
+      <point x="0.0" y="-14.5" />
+      <point x="592.4236111111111" y="327.0" />
+      <point x="815.4641187284967" y="327.0" />
+      <point x="-21.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.MarkServiceImpl" target="ru.sergeev.school.services.MarkService">
+      <point x="60.44444444444446" y="-14.5" />
+      <point x="459.88059022767357" y="1391.0" />
+      <point x="3221.942126739008" y="1391.0" />
+      <point x="-37.33333333333334" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="69.69230769230774" y="-14.5" />
+      <point x="2466.6121874498954" y="1381.0" />
+      <point x="2628.775460072341" y="1381.0" />
+      <point x="2628.775460072341" y="615.0" />
+      <point x="2222.390080266958" y="615.0" />
+      <point x="46.19999999999993" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.LessonServiceImpl" target="ru.sergeev.school.services.LessonService">
+      <point x="18.125" y="-14.5" />
+      <point x="3003.2285473400084" y="516.0" />
+      <point x="3011.275460072341" y="516.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.StudentRepository" target="ru.sergeev.school.entities.Student">
+      <point x="0.0" y="-14.5" />
+      <point x="913.3303765524597" y="1003.0" />
+      <point x="1303.856746933625" y="1003.0" />
+      <point x="1303.856746933625" y="774.0" />
+      <point x="1799.7421636002916" y="774.0" />
+      <point x="-36.15625" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.ScheduleRest" target="ru.sergeev.school.entities.Schedule">
+      <point x="39.33333333333337" y="-14.5" />
+      <point x="1202.7090251954864" y="1381.0" />
+      <point x="1262.8927240198038" y="1381.0" />
+      <point x="1262.8927240198038" y="486.0" />
+      <point x="1054.519042970921" y="486.0" />
+      <point x="34.90909090909088" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.MarkRest" target="ru.sergeev.school.services.MarkService">
+      <point x="-32.33333333333337" y="-14.5" />
+      <point x="3261.775460072341" y="1391.0" />
+      <point x="3259.275460072341" y="1391.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.SubjectRest" target="ru.sergeev.school.services.SubjectService">
+      <point x="36.333333333333314" y="-14.5" />
+      <point x="90.83333333333326" y="1391.0" />
+      <point x="93.25" y="1391.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.ScheduleServiceImpl" target="ru.sergeev.school.repository.ScheduleRepository">
+      <point x="-62.80000000000001" y="-14.5" />
+      <point x="689.136145783229" y="1321.0" />
+      <point x="579.2569444444446" y="1321.0" />
+      <point x="19.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.NameServiceImpl" target="ru.sergeev.school.repository.NameRepository">
+      <point x="0.0" y="-14.5" />
+      <point x="1539.7734136002916" y="1341.0" />
+      <point x="1596.0234136002916" y="1341.0" />
+      <point x="-11.333333333333371" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.LessonServiceImpl" target="ru.sergeev.school.repository.LessonRepository">
+      <point x="-18.125" y="-14.5" />
+      <point x="2966.9785473400084" y="516.0" />
+      <point x="2940.275460072341" y="516.0" />
+      <point x="35.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.OtherInfoServiceImpl" target="ru.sergeev.school.repository.OtherInfoRepository">
+      <point x="0.0" y="-14.5" />
+      <point x="2111.6641534006144" y="1381.0" />
+      <point x="2143.336066132947" y="1381.0" />
+      <point x="-12.916666666666686" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.OtherInfoRepository" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="0.0" y="-14.5" />
+      <point x="2156.252732799614" y="1092.0" />
+      <point x="2180.919399466281" y="1092.0" />
+      <point x="2180.919399466281" y="685.0" />
+      <point x="2176.1900802669584" y="685.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.SubjectServiceImpl" target="ru.sergeev.school.entities.Subject">
+      <point x="-46.25" y="-14.5" />
+      <point x="159.95833333333348" y="1391.0" />
+      <point x="165.75" y="1391.0" />
+      <point x="165.75" y="238.0" />
+      <point x="439.0152777777778" y="238.0" />
+      <point x="-21.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.User" target="ru.sergeev.school.entities.Teacher">
+      <point x="13.3125" y="-14.5" />
+      <point x="1880.565232799614" y="1122.0" />
+      <point x="2445.644625721504" y="1122.0" />
+      <point x="-24.545454545454504" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.LessonService" target="ru.sergeev.school.entities.Lesson">
+      <point x="0.0" y="-14.5" />
+      <point x="3011.275460072341" y="188.0" />
+      <point x="2607.3624732905982" y="188.0" />
+      <point x="24.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.SubjectRest" target="ru.sergeev.school.entities.Subject">
+      <point x="-36.333333333333485" y="-14.5" />
+      <point x="18.166666666666515" y="1391.0" />
+      <point x="20.75" y="1391.0" />
+      <point x="20.75" y="218.0" />
+      <point x="421.6152777777777" y="218.0" />
+      <point x="-39.15000000000009" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.repository.StudentRepository">
+      <point x="-69.23076923076923" y="-14.5" />
+      <point x="1248.144922631384" y="1341.0" />
+      <point x="931.4553765524597" y="1341.0" />
+      <point x="18.125" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.repository.OtherInfoRepository">
+      <point x="-46.46153846153845" y="-14.5" />
+      <point x="2350.458341296049" y="1321.0" />
+      <point x="2195.002732799614" y="1321.0" />
+      <point x="38.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.ScheduleRow" target="ru.sergeev.school.entities.Teacher">
+      <point x="21.25" y="14.5" />
+      <point x="2556.8624732905982" y="407.0" />
+      <point x="2553.8624732905982" y="407.0" />
+      <point x="2553.8624732905982" y="1003.0" />
+      <point x="2511.440080266958" y="1003.0" />
+      <point x="41.25" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Grade" target="ru.sergeev.school.entities.Schedule">
+      <point x="-9.875" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.DayServiceImpl" target="ru.sergeev.school.services.DayService">
+      <point x="-48.375" y="-14.5" />
+      <point x="607.7986111111111" y="685.0" />
+      <point x="592.4236111111111" y="685.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.NameServiceImpl" target="ru.sergeev.school.services.NameService">
+      <point x="-47.0" y="-14.5" />
+      <point x="1492.7734136002916" y="1311.0" />
+      <point x="1460.856746933625" y="1311.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.ScheduleService" target="ru.sergeev.school.entities.Grade">
+      <point x="-33.25" y="-14.5" />
+      <point x="1152.6427240198038" y="1172.0" />
+      <point x="1180.3927240198038" y="1172.0" />
+      <point x="1180.3927240198038" y="675.0" />
+      <point x="1041.6387982156762" y="675.0" />
+      <point x="12.153846153846132" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.TeacherService" target="ru.sergeev.school.entities.Name">
+      <point x="0.0" y="-14.5" />
+      <point x="2543.775460072341" y="923.0" />
+      <point x="2124.753896990358" y="923.0" />
+      <point x="36.92307692307702" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.SubjectService" target="ru.sergeev.school.entities.Subject">
+      <point x="0.0" y="-14.5" />
+      <point x="93.25" y="228.0" />
+      <point x="430.31527777777774" y="228.0" />
+      <point x="-30.450000000000045" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.GradeServiceImpl" target="ru.sergeev.school.repository.GradeRepository">
+      <point x="56.0" y="-14.5" />
+      <point x="1093.6030982905982" y="754.0" />
+      <point x="1136.1427240198038" y="754.0" />
+      <point x="33.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Student" target="ru.sergeev.school.entities.User">
+      <point x="2.78125" y="14.5" />
+      <point x="1838.6796636002916" y="844.0" />
+      <point x="1827.1433200672814" y="844.0" />
+      <point x="1827.1433200672814" y="1082.0" />
+      <point x="1845.065232799614" y="1082.0" />
+      <point x="-22.1875" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Grade" target="ru.sergeev.school.entities.Student">
+      <point x="36.46153846153845" y="14.5" />
+      <point x="1065.9464905233685" y="585.0" />
+      <point x="1817.356746933625" y="585.0" />
+      <point x="-18.541666666666742" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.ScheduleRow" target="ru.sergeev.school.entities.Subject">
+      <point x="-52.0625" y="-14.5" />
+      <point x="2483.5499732905982" y="248.0" />
+      <point x="465.1152777777777" y="248.0" />
+      <point x="4.3500000000000085" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.MarkServiceImpl" target="ru.sergeev.school.repository.MarkRepository">
+      <point x="0.0" y="-14.5" />
+      <point x="399.4361457832292" y="1291.0" />
+      <point x="420.6736111111113" y="1291.0" />
+      <point x="-32.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.repository.NameRepository">
+      <point x="-58.076923076923094" y="-14.5" />
+      <point x="2338.8429566806644" y="1331.0" />
+      <point x="1664.0234136002919" y="1331.0" />
+      <point x="56.66666666666674" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.ScheduleServiceImpl" target="ru.sergeev.school.entities.Schedule">
+      <point x="0.0" y="-14.5" />
+      <point x="751.936145783229" y="1311.0" />
+      <point x="800.4236111111111" y="1311.0" />
+      <point x="800.4236111111111" y="506.0" />
+      <point x="1002.1554066072847" y="506.0" />
+      <point x="-17.454545454545382" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.SubjectServiceImpl" target="ru.sergeev.school.repository.ScheduleRepository">
+      <point x="64.75" y="-14.5" />
+      <point x="270.9583333333335" y="1321.0" />
+      <point x="541.2569444444446" y="1321.0" />
+      <point x="-19.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRowRepository" target="ru.sergeev.school.entities.Schedule">
+      <point x="-21.875" y="-14.5" />
+      <point x="2704.900460072341" y="1182.0" />
+      <point x="2728.6035473400084" y="1182.0" />
+      <point x="2728.6035473400084" y="476.0" />
+      <point x="1063.2463156981937" y="476.0" />
+      <point x="43.636363636363626" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.ScheduleService" target="ru.sergeev.school.entities.Schedule">
+      <point x="33.25" y="-14.5" />
+      <point x="1219.1427240198038" y="1172.0" />
+      <point x="1191.3927240198038" y="1172.0" />
+      <point x="1191.3927240198038" y="496.0" />
+      <point x="1045.7917702436482" y="496.0" />
+      <point x="26.18181818181813" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.TeacherService" target="ru.sergeev.school.entities.Teacher">
+      <point x="-42.33333333333337" y="-14.5" />
+      <point x="2501.442126739008" y="1182.0" />
+      <point x="2502.917352994231" y="1182.0" />
+      <point x="32.72727272727275" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.StudentService" target="ru.sergeev.school.entities.Student">
+      <point x="0.0" y="-14.5" />
+      <point x="1609.4198797575878" y="814.0" />
+      <point x="1821.9921636002916" y="814.0" />
+      <point x="-13.90625" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.DayRepository" target="ru.sergeev.school.entities.Schedule">
+      <point x="31.0" y="-14.5" />
+      <point x="758.9236111111111" y="496.0" />
+      <point x="993.428133880012" y="496.0" />
+      <point x="-26.181818181818187" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Day" target="ru.sergeev.school.entities.Schedule">
+      <point x="29.75" y="14.5" />
+      <point x="866.4641187284967" y="317.0" />
+      <point x="1013.6099520618301" y="317.0" />
+      <point x="-6.0" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.GradeRest" target="ru.sergeev.school.entities.Grade">
+      <point x="-33.66666666666663" y="-14.5" />
+      <point x="863.4364316239316" y="754.0" />
+      <point x="852.6811855582654" y="754.0" />
+      <point x="852.6811855582654" y="655.0" />
+      <point x="1011.2541828310609" y="655.0" />
+      <point x="-18.230769230769226" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.repository.OtherInfoRepository">
+      <point x="57.69230769230768" y="-14.5" />
+      <point x="1375.0679995544608" y="1361.0" />
+      <point x="2091.669399466281" y="1361.0" />
+      <point x="-64.58333333333331" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.OtherInfoRepository" target="ru.sergeev.school.entities.Teacher">
+      <point x="51.666666666666686" y="-14.5" />
+      <point x="2207.919399466281" y="1152.0" />
+      <point x="2470.190080266958" y="1152.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.ScheduleRow" target="ru.sergeev.school.entities.Schedule">
+      <point x="-12.75" y="14.5" />
+      <point x="2522.8624732905982" y="407.0" />
+      <point x="1061.60995206183" y="407.0" />
+      <point x="42.0" y="-14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.StudentServiceImpl" target="ru.sergeev.school.repository.NameRepository">
+      <point x="46.153846153846146" y="-14.5" />
+      <point x="1363.5295380159992" y="1331.0" />
+      <point x="1573.356746933625" y="1331.0" />
+      <point x="-34.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.TeacherServiceImpl" target="ru.sergeev.school.repository.TeacherRepository">
+      <point x="-11.615384615384642" y="-14.5" />
+      <point x="2385.304495142203" y="1291.0" />
+      <point x="2291.252732799614" y="1291.0" />
+      <point x="-36.5" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.GradeServiceImpl" target="ru.sergeev.school.entities.Grade">
+      <point x="0.0" y="-14.5" />
+      <point x="1037.6030982905982" y="754.0" />
+      <point x="1024.3927240198038" y="754.0" />
+      <point x="1024.3927240198038" y="685.0" />
+      <point x="1029.48495206183" y="685.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.rest.MarkRest" target="ru.sergeev.school.entities.Mark">
+      <point x="32.33333333333326" y="-14.5" />
+      <point x="3325.775460072341" y="59.0" />
+      <point x="535.8827084720866" y="59.0" />
+      <point x="34.61538461538464" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.LessonRepository" target="ru.sergeev.school.entities.Lesson">
+      <point x="35.0" y="-14.5" />
+      <point x="2940.275460072341" y="198.0" />
+      <point x="2595.3624732905982" y="198.0" />
+      <point x="12.0" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.MarkRepository" target="ru.sergeev.school.entities.Subject">
+      <point x="0.0" y="-14.5" />
+      <point x="453.4236111111113" y="854.0" />
+      <point x="456.4152777777779" y="854.0" />
+      <point x="-4.349999999999909" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Student" target="ru.sergeev.school.entities.Mark">
+      <point x="-3.7083333333333712" y="-14.5" />
+      <point x="1832.1900802669584" y="99.0" />
+      <point x="512.8057853951635" y="99.0" />
+      <point x="11.538461538461547" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.OtherInfoRepository" target="ru.sergeev.school.entities.Student">
+      <point x="-51.66666666666663" y="-14.5" />
+      <point x="2104.5860661329475" y="1092.0" />
+      <point x="2037.3308200672814" y="1092.0" />
+      <point x="2037.3308200672814" y="844.0" />
+      <point x="1855.3671636002916" y="844.0" />
+      <point x="19.46875" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.User" target="ru.sergeev.school.entities.Student">
+      <point x="-13.3125" y="-14.5" />
+      <point x="1853.940232799614" y="1072.0" />
+      <point x="1836.0183200672814" y="1072.0" />
+      <point x="1836.0183200672814" y="854.0" />
+      <point x="1844.2421636002916" y="854.0" />
+      <point x="8.34375" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Subject" target="ru.sergeev.school.entities.Mark">
+      <point x="-32.625" y="-14.5" />
+      <point x="428.1402777777778" y="79.0" />
+      <point x="483.9596315490098" y="79.0" />
+      <point x="-17.307692307692264" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.ScheduleRowRepository" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="21.875" y="-14.5" />
+      <point x="2748.650460072341" y="1182.0" />
+      <point x="2739.6035473400084" y="1182.0" />
+      <point x="2739.6035473400084" y="407.0" />
+      <point x="2565.3624732905982" y="407.0" />
+      <point x="29.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.services.impl.SubjectServiceImpl" target="ru.sergeev.school.repository.SubjectRepository">
+      <point x="27.75" y="-14.5" />
+      <point x="233.95833333333348" y="1301.0" />
+      <point x="266.5486111111113" y="1301.0" />
+      <point x="-17.875" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Student" target="ru.sergeev.school.entities.OtherInfo">
+      <point x="18.54166666666663" y="-14.5" />
+      <point x="1854.4400802669584" y="655.0" />
+      <point x="2149.7900802669583" y="655.0" />
+      <point x="-26.400000000000006" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.entities.Schedule" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="6.0" y="-14.5" />
+      <point x="1025.60995206183" y="377.0" />
+      <point x="2497.3624732905982" y="377.0" />
+      <point x="-38.25" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.NameRepository" target="ru.sergeev.school.entities.Student">
+      <point x="-45.33333333333337" y="-14.5" />
+      <point x="1562.0234136002916" y="1172.0" />
+      <point x="1369.856746933625" y="1172.0" />
+      <point x="1369.856746933625" y="804.0" />
+      <point x="1816.4296636002916" y="804.0" />
+      <point x="-19.46875" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.SubjectRepository" target="ru.sergeev.school.entities.ScheduleRow">
+      <point x="35.75" y="-14.5" />
+      <point x="320.1736111111113" y="1182.0" />
+      <point x="259.6736111111113" y="1182.0" />
+      <point x="259.6736111111113" y="367.0" />
+      <point x="2488.8624732905982" y="367.0" />
+      <point x="-46.75" y="14.5" />
+    </edge>
+    <edge source="ru.sergeev.school.repository.NameRepository" target="ru.sergeev.school.entities.Name">
+      <point x="0.0" y="-14.5" />
+      <point x="1607.356746933625" y="1092.0" />
+      <point x="1748.6124732905982" y="1092.0" />
+      <point x="1748.6124732905982" y="1003.0" />
+      <point x="2075.523127759589" y="1003.0" />
+      <point x="-12.307692307692264" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6967588462682128" x="1670.690924080042" y="760.6775088061156" />
+  <SelectedNodes>
+    <node>ru.sergeev.school.repository.ScheduleRowRepository</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
