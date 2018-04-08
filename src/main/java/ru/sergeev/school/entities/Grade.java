@@ -10,7 +10,6 @@ import java.util.Set;
 @Entity
 @Table(name = "CLASSES")
 public class Grade {
-//done
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

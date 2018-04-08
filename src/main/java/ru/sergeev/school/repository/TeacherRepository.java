@@ -10,6 +10,7 @@ import java.util.Set;
 public interface TeacherRepository extends CrudRepository<Teacher, Integer> {
     Teacher findTeacherByTeacherId(Integer id);
     Teacher findFirstByName(Name name);
-    Teacher findTeacherByRows(Set<ScheduleRow> rows);
     Teacher findFirstByNameNameId(Integer nameId);
+
+    void deleteTeacherByName(Name name);
 }
