@@ -10,7 +10,6 @@ import java.util.Set;
 @Entity
 @Table(name = "DAYS")
 public class Day {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "DAY_ID")
@@ -43,6 +42,5 @@ public class Day {
     }
 
     public Day() {
-
     }
 }

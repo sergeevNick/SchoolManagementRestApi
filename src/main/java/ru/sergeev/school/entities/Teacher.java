@@ -9,7 +9,6 @@ import java.util.Set;
 @Entity
 @Table(name = "TEACHERS")
 public class Teacher {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "TEACHER_ID")
@@ -49,10 +48,6 @@ public class Teacher {
     public void setName(Name name) {
         this.name = name;
     }
-
-//    public User getLogin() {
-//        return login;
-//    }
 
     public void setLogin(User login) {
         this.login = login;

@@ -9,7 +9,6 @@ import java.util.Set;
 @Entity
 @Table(name = "SUBJECTS")
 public class Subject {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "SUBJECT_ID")
@@ -30,12 +29,6 @@ public class Subject {
     public void setRows(Set<ScheduleRow> rows) {
         this.rows = rows;
     }
-
-    //dont need gets marks by subject only
-    //can get in by student id
-//    public Set<Mark> getMarks() {
-//        return marks;
-//    }
 
     public void setMarks(Set<Mark> marks) {
         this.marks = marks;

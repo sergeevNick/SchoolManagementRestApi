@@ -10,7 +10,6 @@ import java.util.Set;
 @Entity
 @Table(name = "CLASSES")
 public class Grade {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "CLASS_ID")
@@ -25,7 +24,6 @@ public class Grade {
 
     @OneToMany(fetch = FetchType.LAZY, targetEntity = Schedule.class, mappedBy = "scheduleGrade")
     private Set<Schedule> schedules;
-
 
     public Set<Student> getStudents() {
         return students;
@@ -52,7 +50,6 @@ public class Grade {
     }
 
     public Integer getGradeId() {
-
         return gradeId;
     }
 

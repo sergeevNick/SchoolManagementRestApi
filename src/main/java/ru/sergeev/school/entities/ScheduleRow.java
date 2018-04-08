@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "SCHEDULE_ROWS")
 public class ScheduleRow {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ROW_ID")

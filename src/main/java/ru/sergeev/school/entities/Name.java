@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "NAMES")
 public class Name {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "NAME_ID")
@@ -36,7 +35,6 @@ public class Name {
     @OneToOne(targetEntity = Teacher.class, mappedBy = "name", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Teacher teacher;
 
-
     public void setStudent(Student student) {
         this.student = student;
     }
@@ -44,14 +42,6 @@ public class Name {
     public void setTeacher(Teacher teacher) {
         this.teacher = teacher;
     }
-
-//    public Student getStudent() {
-//        return student;
-//    }
-
-//    public Teacher getTeacher() {
-//        return teacher;
-//    }
 
     public Integer getNameId() {
         return nameId;
@@ -86,6 +76,5 @@ public class Name {
     }
 
     public Name() {
-
     }
 }

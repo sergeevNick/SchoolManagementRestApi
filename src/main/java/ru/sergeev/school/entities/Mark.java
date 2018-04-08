@@ -9,7 +9,6 @@ import java.sql.Date;
 @Entity
 @Table(name = "MARKS")
 public class Mark {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "MARK_ID")
@@ -50,7 +49,6 @@ public class Mark {
     }
 
     public Integer getMarkId() {
-
         return markId;
     }
 

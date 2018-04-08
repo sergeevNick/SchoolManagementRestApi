@@ -8,7 +8,6 @@ import javax.persistence.*;
 @Entity
 @Table(name = "USER")
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "USER_ID", nullable = false, updatable = false)
@@ -77,5 +76,4 @@ public class User {
     public void setId(Integer id) {
         this.id = id;
     }
-
 }

@@ -9,7 +9,6 @@ import java.sql.Date;
 @Entity
 @Table(name = "OTHER_INFO")
 public class OtherInfo {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "OTHER_INFO_ID")
@@ -77,6 +76,5 @@ public class OtherInfo {
     }
 
     public OtherInfo() {
-
     }
 }

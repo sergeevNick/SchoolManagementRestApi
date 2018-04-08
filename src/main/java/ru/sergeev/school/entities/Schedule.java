@@ -9,7 +9,6 @@ import java.util.Set;
 @Entity
 @Table(name = "SCHEDULES")
 public class Schedule {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "SCHEDULE_ID")
@@ -40,7 +39,6 @@ public class Schedule {
     }
 
     public Day getDay() {
-
         return day;
     }
 

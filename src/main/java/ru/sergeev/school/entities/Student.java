@@ -10,7 +10,6 @@ import java.util.Set;
 @Entity
 @Table(name = "STUDENTS")
 public class Student {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "STUDENT_ID")
@@ -47,10 +46,6 @@ public class Student {
     public void setMarks(Set<Mark> marks) {
         this.marks = marks;
     }
-
-//    public User getLogin() {
-//        return login;
-//    }
 
     public void setLogin(User login) {
         this.login = login;

@@ -10,7 +10,6 @@ import java.util.Set;
 @Entity
 @Table(name = "LESSONS")
 public class Lesson {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "LESSON_ID")
@@ -45,7 +44,6 @@ public class Lesson {
     }
 
     public Integer getLessonId() {
-
         return lessonId;
     }
 
