@@ -1,5 +1,7 @@
 package ru.sergeev.school.rest;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,6 +12,7 @@ import ru.sergeev.school.entities.Subject;
 import ru.sergeev.school.services.SubjectService;
 
 @RestController
+@Api(value="subjects", description="Operations pertaining to subjects in school")
 public class SubjectRest {
     private final SubjectService subjectService;
 
@@ -18,6 +21,7 @@ public class SubjectRest {
         this.subjectService = subjectService;
     }
 
+    @ApiOperation(value = "Provides a list of subjects by grade id")
     @RequestMapping(value = "/grades/{gradeId}/subjects", method = RequestMethod.GET)
     public ResponseEntity<Iterable<Subject>> getSubjectsByGradeId(@PathVariable(value = "gradeId") Integer gradeId) {
         return ResponseEntity.ok(subjectService.getSubjectsByGradeId(gradeId));
