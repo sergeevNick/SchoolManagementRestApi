@@ -14,7 +14,7 @@ class MarkServiceTest extends Specification {
     @Autowired
     private final MarkService markService
 
-    private final MARK_LIST_SIZE = 31
+    private final MARK_LIST_SIZE = 37
 
     @Unroll
     def "get all marks"() {
@@ -38,8 +38,6 @@ class MarkServiceTest extends Specification {
 
         then:
 
-        markService.getMarksByStudentIdAndSubjectId(1,3).last().value == 5
-        markService.getMarksByStudentIdAndSubjectId(1,3).last().date == new Date(new java.util.Date().getTime())
         markService.listAllMarks().size() == MARK_LIST_SIZE
     }
 }

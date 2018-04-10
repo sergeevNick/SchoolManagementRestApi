@@ -7,7 +7,6 @@ import ru.sergeev.school.entities.Grade;
 import ru.sergeev.school.repository.GradeRepository;
 import ru.sergeev.school.services.GradeService;
 
-@Transactional
 @Service
 public class GradeServiceImpl implements GradeService {
     private final GradeRepository gradeRepository;
@@ -27,11 +26,13 @@ public class GradeServiceImpl implements GradeService {
         return gradeRepository.findGradeByGradeId(id);
     }
 
+    @Transactional
     @Override
     public void deleteGradeById(Integer id) {
         gradeRepository.deleteGradeByGradeId(id);
     }
 
+    @Transactional
     @Override
     public void deleteGradeByNumber(String number) {
         gradeRepository.deleteGradeByNumber(number);

@@ -13,7 +13,6 @@ import ru.sergeev.school.services.SubjectService;
 import java.util.HashSet;
 import java.util.Set;
 
-@Transactional
 @Service
 public class SubjectServiceImpl implements SubjectService {
     private final SubjectRepository subjectRepository;
@@ -30,6 +29,7 @@ public class SubjectServiceImpl implements SubjectService {
         return subjectRepository.findAll();
     }
 
+    @Transactional
     @Override
     public Iterable<Subject> getSubjectsByGradeId(Integer gradeId) {
         Set<Subject> subjectSet = new HashSet<>();

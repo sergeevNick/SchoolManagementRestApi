@@ -13,7 +13,6 @@ import ru.sergeev.school.services.StudentService;
 
 import java.sql.Date;
 
-@Transactional
 @Service
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;

@@ -17,18 +17,15 @@ class GradeServiceTest extends Specification {
     private final GRADE_LIST_SIZE = 3
 
     @Unroll
-    def "test get all grades"() {
-        when:
-        int listSize = gradeService.listAllGrades().size()
-
-        then:
-        listSize == GRADE_LIST_SIZE
+    def "get all grades"() {
+        expect:
+        gradeService.listAllGrades().size() == GRADE_LIST_SIZE
     }
 
     @Unroll
-    def "test delete grade"() {
+    def "delete grade"() {
         when:
-        gradeService.deleteGradeByNumber("9в")
+        gradeService.deleteGradeById(gradeService.listAllGrades().last().gradeId)
 
         then:
         gradeService.listAllGrades().last().number != "9в"
@@ -36,7 +33,7 @@ class GradeServiceTest extends Specification {
     }
 
     @Unroll
-    def "test save grade"() {
+    def "save grade"() {
         when:
         gradeService.saveGrade("9в")
 

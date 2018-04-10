@@ -11,7 +11,7 @@ import ru.sergeev.school.services.MarkService;
 
 import java.sql.Date;
 
-@Transactional
+
 @Service
 public class MarkServiceImpl implements MarkService {
     private final MarkRepository markRepository;
@@ -42,6 +42,7 @@ public class MarkServiceImpl implements MarkService {
         return markRepository.findMarksByStudentStudentIdAndSubjectName(studentId, subjectName);
     }
 
+    @Transactional
     @Override
     public void deleteMarkById(Integer id) {
         markRepository.deleteMarkByMarkId(id);
