@@ -13,4 +13,5 @@ public interface TeacherRepository extends CrudRepository<Teacher, Integer> {
     Teacher findFirstByNameNameId(Integer nameId);
 
     void deleteTeacherByName(Name name);
+    void deleteTeacherByTeacherId(Integer id);
 }

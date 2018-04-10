@@ -2,10 +2,12 @@ package ru.sergeev.school.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Grade;
 import ru.sergeev.school.repository.GradeRepository;
 import ru.sergeev.school.services.GradeService;
 
+@Transactional
 @Service
 public class GradeServiceImpl implements GradeService {
     private final GradeRepository gradeRepository;
@@ -26,12 +28,12 @@ public class GradeServiceImpl implements GradeService {
     }
 
     @Override
-    public void deleteGrade(Integer id) {
-        gradeRepository.delete(id);
+    public void deleteGradeById(Integer id) {
+        gradeRepository.deleteGradeByGradeId(id);
     }
 
     @Override
-    public void deleteGrade(String number) {
+    public void deleteGradeByNumber(String number) {
         gradeRepository.deleteGradeByNumber(number);
     }
 

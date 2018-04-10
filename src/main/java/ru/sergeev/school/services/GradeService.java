@@ -6,8 +6,8 @@ public interface GradeService {
     Iterable<Grade> listAllGrades();
     Grade getGradeById(Integer id);
 
-    void deleteGrade(Integer id);
-    void deleteGrade(String number);
+    void deleteGradeById(Integer id);
+    void deleteGradeByNumber(String number);
 
     Grade saveGrade(String number);
 }

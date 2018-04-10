@@ -17,5 +17,6 @@ public interface StudentRepository extends CrudRepository<Student, Integer> {
     Set<Student> findStudentsByStudentGrade(Grade studentGrade);
     Set<Student> findStudentsByStudentGradeGradeId(Integer gradeId);
 
-    void deleteByName(Name name);
+    void deleteStudentByName(Name name);
+    void deleteStudentByStudentId(Integer id);
 }

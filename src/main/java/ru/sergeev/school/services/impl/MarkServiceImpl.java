@@ -2,6 +2,7 @@ package ru.sergeev.school.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Mark;
 import ru.sergeev.school.repository.MarkRepository;
 import ru.sergeev.school.repository.StudentRepository;
@@ -10,6 +11,7 @@ import ru.sergeev.school.services.MarkService;
 
 import java.sql.Date;
 
+@Transactional
 @Service
 public class MarkServiceImpl implements MarkService {
     private final MarkRepository markRepository;
@@ -42,7 +44,7 @@ public class MarkServiceImpl implements MarkService {
 
     @Override
     public void deleteMarkById(Integer id) {
-        markRepository.delete(id);
+        markRepository.deleteMarkByMarkId(id);
     }
 
     @Override

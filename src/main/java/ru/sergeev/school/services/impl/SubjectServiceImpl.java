@@ -2,6 +2,7 @@ package ru.sergeev.school.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Schedule;
 import ru.sergeev.school.entities.ScheduleRow;
 import ru.sergeev.school.entities.Subject;
@@ -12,6 +13,7 @@ import ru.sergeev.school.services.SubjectService;
 import java.util.HashSet;
 import java.util.Set;
 
+@Transactional
 @Service
 public class SubjectServiceImpl implements SubjectService {
     private final SubjectRepository subjectRepository;

@@ -21,4 +21,6 @@ public interface MarkRepository extends CrudRepository<Mark, Integer> {
 
     Set<Mark> findMarksByStudentStudentIdAndSubjectSubjectId(Integer studentId, Integer subjectId);
     Set<Mark> findMarksByStudentStudentIdAndSubjectName(Integer studentId, String subjectName);
+
+    void deleteMarkByMarkId(Integer id);
 }

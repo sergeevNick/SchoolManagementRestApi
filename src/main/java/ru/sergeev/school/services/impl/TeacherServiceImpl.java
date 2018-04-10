@@ -2,6 +2,7 @@ package ru.sergeev.school.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Name;
 import ru.sergeev.school.entities.OtherInfo;
 import ru.sergeev.school.entities.Teacher;
@@ -12,6 +13,7 @@ import ru.sergeev.school.services.TeacherService;
 
 import java.sql.Date;
 
+@Transactional
 @Service
 public class TeacherServiceImpl implements TeacherService {
     private final TeacherRepository teacherRepository;
@@ -34,7 +36,7 @@ public class TeacherServiceImpl implements TeacherService {
 
     @Override
     public void deleteTeacherById(Integer id) {
-        teacherRepository.delete(id);
+        teacherRepository.deleteTeacherByTeacherId(id);
     }
 
     @Override

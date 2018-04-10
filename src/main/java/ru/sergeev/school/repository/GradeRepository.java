@@ -10,4 +10,5 @@ public interface GradeRepository extends CrudRepository<Grade, Integer> {
     Grade findGradeByNumber(String number);
 
     void deleteGradeByNumber(String number);
+    void deleteGradeByGradeId(Integer id);
 }

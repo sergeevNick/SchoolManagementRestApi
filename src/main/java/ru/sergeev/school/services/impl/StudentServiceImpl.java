@@ -2,6 +2,7 @@ package ru.sergeev.school.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Name;
 import ru.sergeev.school.entities.OtherInfo;
 import ru.sergeev.school.entities.Student;
@@ -12,6 +13,7 @@ import ru.sergeev.school.services.StudentService;
 
 import java.sql.Date;
 
+@Transactional
 @Service
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
@@ -52,11 +54,11 @@ public class StudentServiceImpl implements StudentService {
     }
 
     public void deleteStudent(Integer id) {
-        studentRepository.delete(id);
+        studentRepository.deleteStudentByStudentId(id);
     }
 
     public void deleteStudent(Name name) {
-        studentRepository.deleteByName(name);
+        studentRepository.deleteStudentByName(name);
     }
 
     public Student saveStudent(String firsName, String secondName, String lastName, String email, String address, Date birthDate) {
