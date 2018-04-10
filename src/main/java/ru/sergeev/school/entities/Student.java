@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "STUDENTS")
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "STUDENT_ID")
     private Integer studentId;
 

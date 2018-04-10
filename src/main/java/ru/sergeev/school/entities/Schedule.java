@@ -10,7 +10,7 @@ import java.util.Set;
 @Table(name = "SCHEDULES")
 public class Schedule {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "SCHEDULE_ID")
     private Integer scheduleId;
 

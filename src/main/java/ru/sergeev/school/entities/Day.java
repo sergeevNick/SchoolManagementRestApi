@@ -11,7 +11,7 @@ import java.util.Set;
 @Table(name = "DAYS")
 public class Day {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DAY_ID")
     private Integer dayId;
 
