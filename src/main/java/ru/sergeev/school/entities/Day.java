@@ -21,16 +21,7 @@ public class Day {
     @OneToMany(fetch = FetchType.LAZY, targetEntity = Schedule.class, mappedBy = "day")
     private Set<Schedule> schedules;
 
-    public void setSchedules(Set<Schedule> schedules) {
-        this.schedules = schedules;
-    }
-
-    public void setDayId(Integer dayId) {
-        this.dayId = dayId;
-    }
-
-    public void setDayName(String dayName) {
-        this.dayName = dayName;
+    public Day() {
     }
 
     public Integer getDayId() {
@@ -41,6 +32,15 @@ public class Day {
         return dayName;
     }
 
-    public Day() {
+    public void setSchedules(Set<Schedule> schedules) {
+        this.schedules = schedules;
+    }
+
+    public void setDayId(Integer dayId) {
+        this.dayId = dayId;
+    }
+
+    public void setDayName(String dayName) {
+        this.dayName = dayName;
     }
 }

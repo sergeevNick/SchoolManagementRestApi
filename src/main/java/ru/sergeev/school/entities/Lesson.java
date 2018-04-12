@@ -24,23 +24,7 @@ public class Lesson {
     @OneToMany(fetch = FetchType.LAZY, targetEntity = ScheduleRow.class, mappedBy = "lesson")
     private Set<ScheduleRow> rows;
 
-    public void setRows(Set<ScheduleRow> rows) {
-        this.rows = rows;
-    }
-
     public Lesson() {
-    }
-
-    public void setLessonId(Integer lessonId) {
-        this.lessonId = lessonId;
-    }
-
-    public void setStartTime(Time startTime) {
-        this.startTime = startTime;
-    }
-
-    public void setEndTime(Time endTime) {
-        this.endTime = endTime;
     }
 
     public Integer getLessonId() {
@@ -53,5 +37,21 @@ public class Lesson {
 
     public Time getEndTime() {
         return endTime;
+    }
+
+    public void setRows(Set<ScheduleRow> rows) {
+        this.rows = rows;
+    }
+
+    public void setLessonId(Integer lessonId) {
+        this.lessonId = lessonId;
+    }
+
+    public void setStartTime(Time startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(Time endTime) {
+        this.endTime = endTime;
     }
 }

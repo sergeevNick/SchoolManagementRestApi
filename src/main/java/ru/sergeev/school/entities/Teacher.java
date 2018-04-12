@@ -29,10 +29,6 @@ public class Teacher {
     @OneToMany(fetch = FetchType.LAZY, targetEntity = ScheduleRow.class, mappedBy = "teacher")
     private Set<ScheduleRow> rows;
 
-    public void setRows(Set<ScheduleRow> rows) {
-        this.rows = rows;
-    }
-
     public Teacher(Name name, OtherInfo otherInfo) {
         this.name = name;
         this.otherInfo = otherInfo;
@@ -41,28 +37,32 @@ public class Teacher {
     public Teacher() {
     }
 
+    public Integer getTeacherId() {
+        return teacherId;
+    }
+
     public Name getName() {
         return name;
-    }
-
-    public void setName(Name name) {
-        this.name = name;
-    }
-
-    public void setLogin(User login) {
-        this.login = login;
     }
 
     public OtherInfo getOtherInfo() {
         return otherInfo;
     }
 
-    public void setOtherInfo(OtherInfo otherInfo) {
-        this.otherInfo = otherInfo;
+    public void setName(Name name) {
+        this.name = name;
     }
 
-    public Integer getTeacherId() {
-        return teacherId;
+    public void setRows(Set<ScheduleRow> rows) {
+        this.rows = rows;
+    }
+
+    public void setLogin(User login) {
+        this.login = login;
+    }
+
+    public void setOtherInfo(OtherInfo otherInfo) {
+        this.otherInfo = otherInfo;
     }
 
     public void setTeacherId(Integer teacherId) {

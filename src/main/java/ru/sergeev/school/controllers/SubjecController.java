@@ -1,4 +1,4 @@
-package ru.sergeev.school.rest;
+package ru.sergeev.school.controllers;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,11 +13,11 @@ import ru.sergeev.school.services.SubjectService;
 
 @RestController
 @Api(value="subjects", description="Operations pertaining to subjects in school")
-public class SubjectRest {
+public class SubjecController {
     private final SubjectService subjectService;
 
     @Autowired
-    public SubjectRest(SubjectService subjectService) {
+    public SubjecController(SubjectService subjectService) {
         this.subjectService = subjectService;
     }
 

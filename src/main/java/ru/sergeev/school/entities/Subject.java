@@ -26,6 +26,21 @@ public class Subject {
     @OneToMany(fetch = FetchType.LAZY, targetEntity = ScheduleRow.class, mappedBy = "subject")
     private Set<ScheduleRow> rows;
 
+    public Subject() {
+    }
+
+    public Integer getSubjectId() {
+        return subjectId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getRoom() {
+        return room;
+    }
+
     public void setRows(Set<ScheduleRow> rows) {
         this.rows = rows;
     }
@@ -34,27 +49,12 @@ public class Subject {
         this.marks = marks;
     }
 
-    public Subject() {
-    }
-
-    public Integer getSubjectId() {
-        return subjectId;
-    }
-
     public void setSubjectId(Integer subjectId) {
         this.subjectId = subjectId;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Integer getRoom() {
-        return room;
     }
 
     public void setRoom(Integer room) {

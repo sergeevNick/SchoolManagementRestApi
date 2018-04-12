@@ -1,4 +1,4 @@
-package ru.sergeev.school.rest;
+package ru.sergeev.school.controllers;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,11 +13,11 @@ import ru.sergeev.school.services.ScheduleService;
 
 @RestController
 @Api(value="schedules", description="Operations pertaining to schedules in school")
-public class ScheduleRest {
+public class ScheduleController {
     private final ScheduleService scheduleService;
 
     @Autowired
-    public ScheduleRest(ScheduleService scheduleService) {
+    public ScheduleController(ScheduleService scheduleService) {
         this.scheduleService = scheduleService;
     }
 

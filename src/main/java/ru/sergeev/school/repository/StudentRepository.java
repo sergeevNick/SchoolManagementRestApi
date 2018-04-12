@@ -8,15 +8,6 @@ import ru.sergeev.school.entities.Student;
 import java.util.Set;
 
 public interface StudentRepository extends CrudRepository<Student, Integer> {
-    Iterable<Student> findAllByOrderByNameAsc();
-
-    Student findByStudentId(Integer id);
-    Student findByName(Name name);
-    Student findStudentByNameNameId(Integer nameId);
-
-    Set<Student> findStudentsByStudentGrade(Grade studentGrade);
+    Student findStudentByStudentId(Integer id);
     Set<Student> findStudentsByStudentGradeGradeId(Integer gradeId);
-
-    void deleteStudentByName(Name name);
-    void deleteStudentByStudentId(Integer id);
 }

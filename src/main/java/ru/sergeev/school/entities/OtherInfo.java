@@ -35,6 +35,25 @@ public class OtherInfo {
         this.birthDate = birthDate;
     }
 
+    public OtherInfo() {
+    }
+
+    public Integer getInfoId() {
+        return infoId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
     public void setStudent(Student student) {
         this.student = student;
     }
@@ -43,38 +62,19 @@ public class OtherInfo {
         this.teacher = teacher;
     }
 
-    public Integer getInfoId() {
-        return infoId;
-    }
-
     public void setInfoId(Integer infoId) {
         this.infoId = infoId;
-    }
-
-    public String getEmail() {
-        return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
     public void setAddress(String address) {
         this.address = address;
     }
 
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
     public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
-    }
-
-    public OtherInfo() {
     }
 }

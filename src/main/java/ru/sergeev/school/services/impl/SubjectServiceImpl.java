@@ -24,11 +24,6 @@ public class SubjectServiceImpl implements SubjectService {
         this.scheduleRepository = scheduleRepository;
     }
 
-    @Override
-    public Iterable<Subject> listAllSubjects() {
-        return subjectRepository.findAll();
-    }
-
     @Transactional
     @Override
     public Iterable<Subject> getSubjectsByGradeId(Integer gradeId) {
@@ -39,15 +34,5 @@ public class SubjectServiceImpl implements SubjectService {
             }
         }
         return subjectSet;
-    }
-
-    @Override
-    public Subject getSubjectById(Integer id) {
-        return subjectRepository.findSubjectBySubjectId(id);
-    }
-
-    @Override
-    public Subject getSubjectByName(String subjectName) {
-        return subjectRepository.findSubjectByName(subjectName);
     }
 }

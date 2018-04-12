@@ -29,17 +29,12 @@ public class MarkServiceImpl implements MarkService {
 
     @Override
     public Iterable<Mark> listAllMarks() {
-        return markRepository.findAllByOrderByDateAsc();
+        return markRepository.findAll();
     }
 
     @Override
     public Iterable<Mark> getMarksByStudentIdAndSubjectId(Integer studentId, Integer subjectId) {
         return markRepository.findMarksByStudentStudentIdAndSubjectSubjectId(studentId, subjectId);
-    }
-
-    @Override
-    public Iterable<Mark> getMarksByStudentIdAndSubjectName(Integer studentId, String subjectName) {
-        return markRepository.findMarksByStudentStudentIdAndSubjectName(studentId, subjectName);
     }
 
     @Transactional
@@ -48,22 +43,16 @@ public class MarkServiceImpl implements MarkService {
         markRepository.deleteMarkByMarkId(id);
     }
 
-    @Override
-    public Mark saveMark(Integer value, Integer studentId, Integer subjectId) {
-        Mark mark = new Mark(value);
-        mark.setDate(new Date(new java.util.Date().getTime()));
-        mark.setStudent(studentRepository.findByStudentId(studentId));
-        mark.setSubject(subjectRepository.findSubjectBySubjectId(subjectId));
-        return saveMark(mark);
-    }
-
-    @Override
     public Mark saveMark(Mark mark) {
         return markRepository.save(mark);
     }
 
     @Override
-    public Mark saveMark(Integer value, Date date) {
-        return markRepository.save(new Mark(value, date));
+    public Mark saveMark(Integer value, Integer studentId, Integer subjectId) {
+        Mark mark = new Mark(value);
+        mark.setDate(new Date(new java.util.Date().getTime()));
+        mark.setStudent(studentRepository.findStudentByStudentId(studentId));
+        mark.setSubject(subjectRepository.findSubjectBySubjectId(subjectId));
+        return saveMark(mark);
     }
 }

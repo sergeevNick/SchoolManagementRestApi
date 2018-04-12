@@ -8,7 +8,4 @@ import java.util.Set;
 
 public interface SubjectRepository extends CrudRepository<Subject, Integer> {
     Subject findSubjectBySubjectId(Integer id);
-    Subject findSubjectByName(String name);
-    Subject findSubjectByRoom(Integer room);
-    Set<Subject> findSubjectsByRows(Set<ScheduleRow> rows);
 }

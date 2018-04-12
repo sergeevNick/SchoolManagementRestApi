@@ -22,15 +22,14 @@ public class User {
     @Column(name = "ROLE", nullable = false)
     private String role;
 
-
     @OneToOne(targetEntity = Student.class, mappedBy = "login", fetch = FetchType.LAZY)
     private Student student;
 
     @OneToOne(targetEntity = Teacher.class, mappedBy = "login", fetch = FetchType.LAZY)
     private Teacher teacher;
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public Integer getId() {
+        return id;
     }
 
     public Student getStudent() {
@@ -41,39 +40,39 @@ public class User {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
     public String getRole() {
         return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
     public String getLogin() {
         return login;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
     public String getHash() {
         return hash;
     }
 
-    public void setHash(String hash) {
-        this.hash = hash;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public void setHash(String hash) {
+        this.hash = hash;
     }
 }

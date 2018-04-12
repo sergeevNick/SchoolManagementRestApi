@@ -20,26 +20,4 @@ public class GradeServiceImpl implements GradeService {
     public Iterable<Grade> listAllGrades() {
         return gradeRepository.findAllByOrderByNumberAsc();
     }
-
-    @Override
-    public Grade getGradeById(Integer id) {
-        return gradeRepository.findGradeByGradeId(id);
-    }
-
-    @Transactional
-    @Override
-    public void deleteGradeById(Integer id) {
-        gradeRepository.deleteGradeByGradeId(id);
-    }
-
-    @Transactional
-    @Override
-    public void deleteGradeByNumber(String number) {
-        gradeRepository.deleteGradeByNumber(number);
-    }
-
-    @Override
-    public Grade saveGrade(String number) {
-        return gradeRepository.save(new Grade(number));
-    }
 }

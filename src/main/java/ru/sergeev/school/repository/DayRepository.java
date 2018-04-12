@@ -7,8 +7,5 @@ import ru.sergeev.school.entities.Schedule;
 import java.util.Set;
 
 public interface DayRepository extends CrudRepository<Day, Integer> {
-    Day findDayByDayId(Integer id);
-    Day findDayByDayName(String name);
-    Day findDayBySchedules(Set<Schedule> schedules);
 }
 

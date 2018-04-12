@@ -7,7 +7,4 @@ import ru.sergeev.school.entities.ScheduleRow;
 import java.util.Set;
 
 public interface LessonRepository extends CrudRepository<Lesson, Integer> {
-    Iterable<Lesson> findAllByOrderByLessonIdAsc();
-    Lesson findLessonByLessonId(Integer id);
-    Lesson findLessonByRows(Set<ScheduleRow> rows);
 }

@@ -35,12 +35,36 @@ public class Student {
     @JoinColumn(name = "CLASS_ID")
     private Grade studentGrade;
 
-    public void setStudentGrade(Grade studentGrade) {
-        this.studentGrade = studentGrade;
+    public Student(Name name, OtherInfo otherInfo) {
+        this.name = name;
+        this.otherInfo = otherInfo;
     }
 
-    public Set<Mark> getMarks() {
-        return marks;
+    public Student() {
+    }
+
+    public Integer getStudentId() {
+        return studentId;
+    }
+
+    public Name getName() {
+        return name;
+    }
+
+    public OtherInfo getOtherInfo() {
+        return otherInfo;
+    }
+
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public void setStudentGrade(Grade studentGrade) {
+        this.studentGrade = studentGrade;
     }
 
     public void setMarks(Set<Mark> marks) {
@@ -51,35 +75,7 @@ public class Student {
         this.login = login;
     }
 
-    public Name getName() {
-        return name;
-    }
-
-    public void setName(Name name) {
-        this.name = name;
-    }
-
-    public OtherInfo getOtherInfo() {
-        return otherInfo;
-    }
-
     public void setOtherInfo(OtherInfo otherInfo) {
         this.otherInfo = otherInfo;
-    }
-
-    public Student() {
-    }
-
-    public Student(Name name, OtherInfo otherInfo) {
-        this.name = name;
-        this.otherInfo = otherInfo;
-    }
-
-    public Integer getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(Integer studentId) {
-        this.studentId = studentId;
     }
 }

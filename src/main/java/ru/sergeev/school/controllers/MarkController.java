@@ -1,4 +1,4 @@
-package ru.sergeev.school.rest;
+package ru.sergeev.school.controllers;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -11,11 +11,11 @@ import ru.sergeev.school.services.MarkService;
 
 @RestController
 @Api(value="mark", description="Operations pertaining to marks in school")
-public class MarkRest {
+public class MarkController {
     private final MarkService markService;
 
     @Autowired
-    public MarkRest(MarkService markService) {
+    public MarkController(MarkService markService) {
         this.markService = markService;
     }
 

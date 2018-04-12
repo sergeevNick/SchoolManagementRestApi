@@ -28,6 +28,30 @@ public class Mark {
     @JoinColumn(name = "SUBJECT_ID")
     private Subject subject;
 
+    public Mark(Integer value) {
+        this.value = value;
+    }
+
+    public Mark(Integer value, Date date) {
+        this.value = value;
+        this.date = date;
+    }
+
+    public Mark() {
+    }
+
+    public Integer getMarkId() {
+        return markId;
+    }
+
+    public Integer getValue() {
+        return value;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
     public void setStudent(Student student) {
         this.student = student;
     }
@@ -45,31 +69,6 @@ public class Mark {
     }
 
     public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public Integer getMarkId() {
-        return markId;
-    }
-
-    public Integer getValue() {
-        return value;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public Mark() {
-
-    }
-
-    public Mark(Integer value) {
-        this.value = value;
-    }
-
-    public Mark(Integer value, Date date) {
-        this.value = value;
         this.date = date;
     }
 }

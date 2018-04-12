@@ -26,8 +26,19 @@ public class Schedule {
     @OrderBy("lesson ASC")
     private Set<ScheduleRow> rows;
 
+    public Schedule() {
+    }
+
     public Set<ScheduleRow> getRows() {
         return rows;
+    }
+
+    public Day getDay() {
+        return day;
+    }
+
+    public Integer getScheduleId() {
+        return scheduleId;
     }
 
     public void setRows(Set<ScheduleRow> rows) {
@@ -38,19 +49,8 @@ public class Schedule {
         this.scheduleGrade = scheduleGrade;
     }
 
-    public Day getDay() {
-        return day;
-    }
-
     public void setDay(Day day) {
         this.day = day;
-    }
-
-    public Schedule() {
-    }
-
-    public Integer getScheduleId() {
-        return scheduleId;
     }
 
     public void setScheduleId(Integer scheduleId) {

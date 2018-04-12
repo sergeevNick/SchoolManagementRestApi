@@ -25,16 +25,31 @@ public class Grade {
     @OneToMany(fetch = FetchType.LAZY, targetEntity = Schedule.class, mappedBy = "scheduleGrade")
     private Set<Schedule> schedules;
 
+    public Grade(String number) {
+        this.number = number;
+    }
+
+    public Grade() {
+    }
+
     public Set<Student> getStudents() {
         return students;
     }
 
-    public void setStudents(Set<Student> students) {
-        this.students = students;
-    }
-
     public Set<Schedule> getSchedules() {
         return schedules;
+    }
+
+    public Integer getGradeId() {
+        return gradeId;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public void setStudents(Set<Student> students) {
+        this.students = students;
     }
 
     public void setSchedules(Set<Schedule> schedules) {
@@ -46,21 +61,6 @@ public class Grade {
     }
 
     public void setNumber(String number) {
-        this.number = number;
-    }
-
-    public Integer getGradeId() {
-        return gradeId;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public Grade() {
-    }
-
-    public Grade(String number) {
         this.number = number;
     }
 }

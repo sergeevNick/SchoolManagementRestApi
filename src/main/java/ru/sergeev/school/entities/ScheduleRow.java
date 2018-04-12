@@ -29,24 +29,31 @@ public class ScheduleRow {
     @JoinColumn(name = "SUBJECT_ID", nullable = false)
     private Subject subject;
 
-    public Subject getSubject() {
-        return subject;
+    public ScheduleRow() {
     }
 
-    public void setSubject(Subject subject) {
-        this.subject = subject;
+    public Subject getSubject() {
+        return subject;
     }
 
     public Teacher getTeacher() {
         return teacher;
     }
 
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
-
     public Lesson getLesson() {
         return lesson;
+    }
+
+    public Integer getScheduleRowId() {
+        return scheduleRowId;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
 
     public void setLesson(Lesson lesson) {
@@ -55,13 +62,6 @@ public class ScheduleRow {
 
     public void setSchedule(Schedule schedule) {
         this.schedule = schedule;
-    }
-
-    public ScheduleRow() {
-    }
-
-    public Integer getScheduleRowId() {
-        return scheduleRowId;
     }
 
     public void setScheduleRowId(Integer scheduleRowId) {

@@ -8,10 +8,4 @@ import ru.sergeev.school.entities.Teacher;
 import java.util.Set;
 
 public interface TeacherRepository extends CrudRepository<Teacher, Integer> {
-    Teacher findTeacherByTeacherId(Integer id);
-    Teacher findFirstByName(Name name);
-    Teacher findFirstByNameNameId(Integer nameId);
-
-    void deleteTeacherByName(Name name);
-    void deleteTeacherByTeacherId(Integer id);
 }

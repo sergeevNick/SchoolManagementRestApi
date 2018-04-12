@@ -1,4 +1,4 @@
-package ru.sergeev.school.rest;
+package ru.sergeev.school.controllers;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,11 +13,11 @@ import ru.sergeev.school.services.StudentService;
 
 @RestController
 @Api(value="students", description="Operations pertaining to students in school")
-public class StudentRest {
+public class StudentController {
     private final StudentService studentService;
 
     @Autowired
-    public StudentRest(StudentService studentService) {
+    public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
 
@@ -26,18 +26,4 @@ public class StudentRest {
     public ResponseEntity<Iterable<Student>> getStudentsByGradeId(@PathVariable(value = "gradeId") Integer gradeId) {
         return ResponseEntity.ok(studentService.getStudentsByGradeId(gradeId));
     }
-
-    @ApiOperation(value = "Provides a list of all students in database")
-    @RequestMapping(value = "students", method = RequestMethod.GET)
-    public ResponseEntity<Object> getAllStudents() {
-        return ResponseEntity.ok(studentService.listAllStudents());
-    }
-
-    @ApiOperation(value = "Provides a certain student by student id")
-    @RequestMapping(value = "students/{studentId}", method = RequestMethod.GET)
-    public ResponseEntity<Object> getStudentById(@PathVariable(value = "studentId") Integer studentId) {
-        return ResponseEntity.ok(studentService.getStudentById(studentId));
-    }
-
-
 }
