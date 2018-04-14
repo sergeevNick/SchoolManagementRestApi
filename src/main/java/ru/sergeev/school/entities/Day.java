@@ -18,8 +18,8 @@ public class Day {
     @Column(name = "DAY_NAME")
     private String dayName;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Schedule.class, mappedBy = "day")
-    private Set<Schedule> schedules;
+    /*@OneToMany(fetch = FetchType.LAZY, targetEntity = Schedule.class, mappedBy = "day")
+    private Set<Schedule> schedules;*/
 
     public Day() {
     }
@@ -30,10 +30,6 @@ public class Day {
 
     public String getDayName() {
         return dayName;
-    }
-
-    public void setSchedules(Set<Schedule> schedules) {
-        this.schedules = schedules;
     }
 
     public void setDayId(Integer dayId) {

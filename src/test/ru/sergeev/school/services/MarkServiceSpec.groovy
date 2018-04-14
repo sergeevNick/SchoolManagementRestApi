@@ -1,29 +1,26 @@
-package rest
+package ru.sergeev.school.services
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
-import ru.sergeev.school.services.MarkService
+import ru.sergeev.school.entities.Mark
+import ru.sergeev.school.repository.MarkRepository
+import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
 
 import java.sql.Date
 
 @SpringBootTest(classes = Application.class)
-class MarkServiceTest extends Specification {
+class MarkServiceSpec extends Specification {
     @Autowired
     private final MarkService markService
+    @Autowired
+    private final MarkRepository markRepository;
 
-    private final MARK_LIST_SIZE = 37
+    private final MARK_LIST_SIZE = 38
 
-    @Unroll
-    def "get all marks"() {
-        expect:
-        markService.listAllMarks().size() == MARK_LIST_SIZE
-    }
-
-    @Unroll
-    def "delete last mark"() {
+    def "should delete last mark"() {
         when:
         markService.deleteMarkById(markService.listAllMarks().last().markId)
 
@@ -31,13 +28,11 @@ class MarkServiceTest extends Specification {
         markService.listAllMarks().size() == MARK_LIST_SIZE - 1
     }
 
-    @Unroll
-    def "save mark"() {
+    def "should save mark"() {
         when:
         markService.saveMark(5, 1, 3)
 
         then:
-
         markService.listAllMarks().size() == MARK_LIST_SIZE
     }
 }

@@ -15,8 +15,8 @@ public class Schedule {
     private Integer scheduleId;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Grade.class)
-    @JoinColumn(name = "CLASS_ID", nullable = false)
-    private Grade scheduleGrade;
+    @JoinColumn(name = "GRADE_ID", nullable = false)
+    private Grade grade;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Day.class)
     @JoinColumn(name = "DAY_ID", nullable = false)
@@ -45,8 +45,8 @@ public class Schedule {
         this.rows = rows;
     }
 
-    public void setScheduleGrade(Grade scheduleGrade) {
-        this.scheduleGrade = scheduleGrade;
+    public void setGrade(Grade grade) {
+        this.grade = grade;
     }
 
     public void setDay(Day day) {

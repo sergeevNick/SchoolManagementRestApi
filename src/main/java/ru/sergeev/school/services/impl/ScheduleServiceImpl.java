@@ -18,6 +18,6 @@ public class ScheduleServiceImpl implements ScheduleService {
 
     @Override
     public Iterable<Schedule> getSchedulesByGradeId(Integer gradeId) {
-        return scheduleRepository.findSchedulesByScheduleGradeGradeId(gradeId);
+        return scheduleRepository.findSchedulesByGradeGradeId(gradeId);
     }
 }

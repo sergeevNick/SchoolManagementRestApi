@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Mark;
 import ru.sergeev.school.repository.MarkRepository;
-import ru.sergeev.school.repository.StudentRepository;
 import ru.sergeev.school.repository.SubjectRepository;
+import ru.sergeev.school.repository.UserRepository;
 import ru.sergeev.school.services.MarkService;
 
 import java.sql.Date;
@@ -15,15 +15,15 @@ import java.sql.Date;
 @Service
 public class MarkServiceImpl implements MarkService {
     private final MarkRepository markRepository;
-    private final StudentRepository studentRepository;
+    private final UserRepository userRepository;
     private final SubjectRepository subjectRepository;
 
     @Autowired
     public MarkServiceImpl(MarkRepository markRepository,
-                           StudentRepository studentRepository,
+                           UserRepository userRepository,
                            SubjectRepository subjectRepository) {
         this.markRepository = markRepository;
-        this.studentRepository = studentRepository;
+        this.userRepository = userRepository;
         this.subjectRepository = subjectRepository;
     }
 
@@ -34,7 +34,7 @@ public class MarkServiceImpl implements MarkService {
 
     @Override
     public Iterable<Mark> getMarksByStudentIdAndSubjectId(Integer studentId, Integer subjectId) {
-        return markRepository.findMarksByStudentStudentIdAndSubjectSubjectId(studentId, subjectId);
+        return markRepository.findMarksByStudentUserIdAndSubjectSubjectId(studentId, subjectId);
     }
 
     @Transactional
@@ -48,10 +48,10 @@ public class MarkServiceImpl implements MarkService {
     }
 
     @Override
-    public Mark saveMark(Integer value, Integer studentId, Integer subjectId) {
+    public Mark saveMark(Integer value, Integer userId, Integer subjectId) {
         Mark mark = new Mark(value);
         mark.setDate(new Date(new java.util.Date().getTime()));
-        mark.setStudent(studentRepository.findStudentByStudentId(studentId));
+        mark.setStudent(userRepository.findUserByUserId(userId));
         mark.setSubject(subjectRepository.findSubjectBySubjectId(subjectId));
         return saveMark(mark);
     }

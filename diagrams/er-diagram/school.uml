@@ -3,95 +3,75 @@
   <ID>DATABASE</ID>
   <OriginalElement>2aadb84a-ae19-4421-a93a-8d7a1ba26589.SCHEMA:school</OriginalElement>
   <nodes>
-    <node x="375.5" y="592.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.subjects</node>
-    <node x="644.0" y="370.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.students</node>
-    <node x="644.0" y="181.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.other_info</node>
-    <node x="364.0" y="181.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.teachers</node>
-    <node x="379.5" y="-19.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.names</node>
-    <node x="982.5" y="403.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.classes</node>
-    <node x="970.5" y="792.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules</node>
-    <node x="385.0" y="381.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.user</node>
-    <node x="63.22044088176355" y="792.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.lessons</node>
-    <node x="-37.0" y="1094.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.hibernate_sequence</node>
-    <node x="667.5390781563126" y="570.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks</node>
-    <node x="991.0" y="963.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.days</node>
-    <node x="370.5" y="770.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows</node>
+    <node x="0.0" y="0.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.days</node>
+    <node x="718.25" y="212.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.subjects</node>
+    <node x="665.546875" y="446.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks</node>
+    <node x="447.75" y="0.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.grades</node>
+    <node x="351.875" y="446.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows</node>
+    <node x="34.25" y="212.5">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules</node>
+    <node x="497.25" y="124.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.users</node>
+    <node x="273.25" y="212.0">2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.lessons</node>
   </nodes>
   <notes />
   <edges>
     <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.subjects">
-      <point x="0.0" y="-69.5" />
-      <point x="0.0" y="48.0" />
+      <point x="82.125" y="-69.5" />
+      <point x="543.5" y="426.0" />
+      <point x="770.5" y="426.0" />
+      <point x="-52.25" y="48.0" />
     </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.teachers">
-      <point x="0.0" y="69.5" />
-      <point x="480.0" y="960.0" />
-      <point x="40.0" y="960.0" />
-      <point x="40.0" y="240.0" />
-      <point x="-116.0" y="0.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.days">
-      <point x="0.0" y="47.5" />
-      <point x="0.0" y="-37.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.teachers" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.other_info">
-      <point x="116.0" y="0.0" />
-      <point x="-116.0" y="0.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.students" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.classes">
-      <point x="116.0" y="0.0" />
-      <point x="-97.5" y="0.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.teachers" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.user">
-      <point x="0.0" y="58.5" />
-      <point x="0.0" y="-59.0" />
+    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.users" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.grades">
+      <point x="0.0" y="-136.0" />
+      <point x="50.0" y="37.0" />
     </edge>
     <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.lessons">
-      <point x="-109.5" y="0.0" />
-      <point x="102.0" y="0.0" />
+      <point x="-27.375" y="-69.5" />
+      <point x="434.0" y="416.0" />
+      <point x="375.25" y="416.0" />
+      <point x="0.0" y="48.0" />
     </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.students" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.names">
-      <point x="116.0" y="-40.0" />
-      <point x="920.0" y="400.0" />
-      <point x="920.0" y="40.0" />
-      <point x="100.5" y="0.0" />
+    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.users">
+      <point x="27.375" y="-69.5" />
+      <point x="488.75" y="416.0" />
+      <point x="547.5" y="416.0" />
+      <point x="-50.25" y="136.0" />
     </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.teachers" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.names">
-      <point x="0.0" y="-58.5" />
-      <point x="0.0" y="59.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.students" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.other_info">
-      <point x="0.0" y="-69.5" />
-      <point x="0.0" y="59.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.classes">
-      <point x="0.0" y="-47.5" />
+    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.days">
+      <point x="-54.75" y="-47.5" />
       <point x="0.0" y="37.0" />
     </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.students" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.user">
-      <point x="-116.0" y="0.0" />
-      <point x="95.0" y="0.0" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.students">
-      <point x="0.0" y="-70.0" />
-      <point x="0.0" y="69.5" />
-    </edge>
-    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.subjects">
-      <point x="-104.5" y="0.0" />
-      <point x="104.5" y="0.0" />
+    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.grades">
+      <point x="54.75" y="-47.5" />
+      <point x="198.5" y="99.0" />
+      <point x="497.75" y="99.0" />
+      <point x="-50.0" y="37.0" />
     </edge>
     <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedule_rows" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.schedules">
-      <point x="109.5" y="0.0" />
-      <point x="-109.5" y="0.0" />
+      <point x="-82.125" y="-69.5" />
+      <point x="379.25" y="426.0" />
+      <point x="143.75" y="426.0" />
+      <point x="0.0" y="47.5" />
+    </edge>
+    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.users">
+      <point x="-53.5" y="-70.0" />
+      <point x="719.046875" y="416.0" />
+      <point x="648.0" y="416.0" />
+      <point x="50.25" y="136.0" />
+    </edge>
+    <edge source="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks" target="2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.subjects">
+      <point x="53.5" y="-70.0" />
+      <point x="826.046875" y="426.0" />
+      <point x="875.0" y="426.0" />
+      <point x="52.25" y="48.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.7475655430711611" x="658.5" y="447.87374749498997" />
+  <settings layout="Hierarchic Group" zoom="0.5426515930113053" x="740.017591556053" y="293.0" />
   <SelectedNodes>
-    <node>2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.marks</node>
+    <node>2aadb84a-ae19-4421-a93a-8d7a1ba26589.TABLE:school.lessons</node>
   </SelectedNodes>
   <Categories>
-    <Category>Columns</Category>
     <Category>Key columns</Category>
+    <Category>Columns</Category>
   </Categories>
 </Diagram>
 

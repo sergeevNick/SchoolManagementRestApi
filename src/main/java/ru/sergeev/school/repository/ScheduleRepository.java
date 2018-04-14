@@ -8,5 +8,5 @@ import ru.sergeev.school.entities.Schedule;
 import java.util.Set;
 
 public interface ScheduleRepository extends CrudRepository<Schedule, Integer> {
-    Set<Schedule> findSchedulesByScheduleGradeGradeId(Integer gradeId);
+    Set<Schedule> findSchedulesByGradeGradeId(Integer gradeId);
 }

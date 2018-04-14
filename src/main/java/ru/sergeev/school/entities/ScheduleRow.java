@@ -21,9 +21,9 @@ public class ScheduleRow {
     @JoinColumn(name = "LESSON_ID", nullable = false)
     private Lesson lesson;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Teacher.class)
-    @JoinColumn(name = "TEACHER_ID", nullable = false)
-    private Teacher teacher;
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = User.class)
+    @JoinColumn(name = "TEACHER_ID")
+    private User teacher;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Subject.class)
     @JoinColumn(name = "SUBJECT_ID", nullable = false)
@@ -36,7 +36,7 @@ public class ScheduleRow {
         return subject;
     }
 
-    public Teacher getTeacher() {
+    public User getTeacher() {
         return teacher;
     }
 
@@ -52,7 +52,7 @@ public class ScheduleRow {
         this.subject = subject;
     }
 
-    public void setTeacher(Teacher teacher) {
+    public void setTeacher(User teacher) {
         this.teacher = teacher;
     }
 

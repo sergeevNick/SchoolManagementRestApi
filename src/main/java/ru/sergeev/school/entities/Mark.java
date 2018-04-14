@@ -20,9 +20,9 @@ public class Mark {
     @Column(name = "DATE")
     private Date date;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Student.class)
+    @ManyToOne(fetch = FetchType.LAZY, targetEntity = User.class)
     @JoinColumn(name = "STUDENT_ID")
-    private Student student;
+    private User student;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Subject.class)
     @JoinColumn(name = "SUBJECT_ID")
@@ -52,7 +52,7 @@ public class Mark {
         return date;
     }
 
-    public void setStudent(Student student) {
+    public void setStudent(User student) {
         this.student = student;
     }
 

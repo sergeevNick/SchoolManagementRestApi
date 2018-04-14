@@ -21,9 +21,6 @@ public class Lesson {
     @Column(name = "END")
     private Time endTime;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = ScheduleRow.class, mappedBy = "lesson")
-    private Set<ScheduleRow> rows;
-
     public Lesson() {
     }
 
@@ -37,10 +34,6 @@ public class Lesson {
 
     public Time getEndTime() {
         return endTime;
-    }
-
-    public void setRows(Set<ScheduleRow> rows) {
-        this.rows = rows;
     }
 
     public void setLessonId(Integer lessonId) {

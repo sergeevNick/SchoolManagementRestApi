@@ -8,22 +8,22 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import ru.sergeev.school.entities.Student;
-import ru.sergeev.school.services.StudentService;
+import ru.sergeev.school.entities.User;
+import ru.sergeev.school.services.UserService;
 
 @RestController
 @Api(value="students", description="Operations pertaining to students in school")
 public class StudentController {
-    private final StudentService studentService;
+    private final UserService userService;
 
     @Autowired
-    public StudentController(StudentService studentService) {
-        this.studentService = studentService;
+    public StudentController(UserService userService) {
+        this.userService = userService;
     }
 
     @ApiOperation(value = "Provides a list of students by grade id")
     @RequestMapping(value = "/grades/{gradeId}/students", method = RequestMethod.GET)
-    public ResponseEntity<Iterable<Student>> getStudentsByGradeId(@PathVariable(value = "gradeId") Integer gradeId) {
-        return ResponseEntity.ok(studentService.getStudentsByGradeId(gradeId));
+    public ResponseEntity<Iterable<User>> getStudentsByGradeId(@PathVariable(value = "gradeId") Integer gradeId) {
+        return ResponseEntity.ok(userService.getStudentsByGradeId(gradeId));
     }
 }

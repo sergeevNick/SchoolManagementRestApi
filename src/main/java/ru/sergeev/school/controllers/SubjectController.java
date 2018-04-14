@@ -13,11 +13,11 @@ import ru.sergeev.school.services.SubjectService;
 
 @RestController
 @Api(value="subjects", description="Operations pertaining to subjects in school")
-public class SubjecController {
+public class SubjectController {
     private final SubjectService subjectService;
 
     @Autowired
-    public SubjecController(SubjectService subjectService) {
+    public SubjectController(SubjectService subjectService) {
         this.subjectService = subjectService;
     }
 

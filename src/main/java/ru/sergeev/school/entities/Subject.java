@@ -20,12 +20,6 @@ public class Subject {
     @Column(name = "ROOM")
     private Integer room;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = Mark.class, mappedBy = "subject")
-    private Set<Mark> marks;
-
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = ScheduleRow.class, mappedBy = "subject")
-    private Set<ScheduleRow> rows;
-
     public Subject() {
     }
 
@@ -39,14 +33,6 @@ public class Subject {
 
     public Integer getRoom() {
         return room;
-    }
-
-    public void setRows(Set<ScheduleRow> rows) {
-        this.rows = rows;
-    }
-
-    public void setMarks(Set<Mark> marks) {
-        this.marks = marks;
     }
 
     public void setSubjectId(Integer subjectId) {

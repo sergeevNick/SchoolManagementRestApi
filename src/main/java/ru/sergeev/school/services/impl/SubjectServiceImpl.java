@@ -28,7 +28,7 @@ public class SubjectServiceImpl implements SubjectService {
     @Override
     public Iterable<Subject> getSubjectsByGradeId(Integer gradeId) {
         Set<Subject> subjectSet = new HashSet<>();
-        for (Schedule schedule : scheduleRepository.findSchedulesByScheduleGradeGradeId(gradeId)) {
+        for (Schedule schedule : scheduleRepository.findSchedulesByGradeGradeId(gradeId)) {
             for (ScheduleRow row : schedule.getRows()) {
                 subjectSet.add(row.getSubject());
             }
