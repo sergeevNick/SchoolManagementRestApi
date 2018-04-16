@@ -8,12 +8,15 @@ import spock.lang.Unroll
 
 @SpringBootTest(classes = Application.class)
 class StudentServiceSpec extends Specification {
-    /*@Autowired
-    private final StudentService studentService
+    @Autowired
+    private final UserService userService
 
-    def "should return students by grade userId"() {
+    private final STUDENTS_OF_1ST_GRADE = 5
+    private final STUDENTS_OF_2ND_GRADE = 3
+
+    def "should return students by grade gradeId"() {
         expect:
-        studentService.getStudentsByGradeId(1).size() == 5
-        studentService.getStudentsByGradeId(2).size() == 2
-    }*/
+        userService.getStudentsByGradeId(1).size() == STUDENTS_OF_1ST_GRADE
+        userService.getStudentsByGradeId(2).size() == STUDENTS_OF_2ND_GRADE
+    }
 }

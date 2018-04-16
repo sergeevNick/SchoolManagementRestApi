@@ -65,7 +65,9 @@ public class Mark {
     }
 
     public void setValue(Integer value) {
-        this.value = value;
+        if (value > 1 && value < 6) {
+            this.value = value;
+        }
     }
 
     public void setDate(Date date) {

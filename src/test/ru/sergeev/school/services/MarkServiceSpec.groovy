@@ -15,10 +15,8 @@ import java.sql.Date
 class MarkServiceSpec extends Specification {
     @Autowired
     private final MarkService markService
-    @Autowired
-    private final MarkRepository markRepository;
 
-    private final MARK_LIST_SIZE = 38
+    private final MARK_LIST_SIZE = 9
 
     def "should delete last mark"() {
         when:

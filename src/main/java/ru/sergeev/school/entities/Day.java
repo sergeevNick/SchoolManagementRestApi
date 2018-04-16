@@ -2,6 +2,7 @@ package ru.sergeev.school.entities;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.lang.Nullable;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -17,9 +18,6 @@ public class Day {
 
     @Column(name = "DAY_NAME")
     private String dayName;
-
-    /*@OneToMany(fetch = FetchType.LAZY, targetEntity = Schedule.class, mappedBy = "day")
-    private Set<Schedule> schedules;*/
 
     public Day() {
     }

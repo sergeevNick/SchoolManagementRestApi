@@ -11,9 +11,12 @@ class SubjectServiceSpec extends Specification {
     @Autowired
     private final SubjectService subjectService
 
+    private final SUBJECTS_OF_1ST_GRADE = 12
+    private final SUBJECTS_OF_2ND_GRADE = 8
+
     def "should return number of subjects from grade"() {
         expect:
-        subjectService.getSubjectsByGradeId(1).size() == 12
-        subjectService.getSubjectsByGradeId(2).size() == 10
+        subjectService.getSubjectsByGradeId(1).size() == SUBJECTS_OF_1ST_GRADE
+        subjectService.getSubjectsByGradeId(2).size() == SUBJECTS_OF_2ND_GRADE
     }
 }
