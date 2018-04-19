@@ -1,22 +1,27 @@
-package ru.sergeev.school.services
+package sergeev.school.services
 
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
+import ru.sergeev.school.repository.UserRepository
+import ru.sergeev.school.services.UserService
+import ru.sergeev.school.services.impl.UserServiceImpl
 import spock.lang.Specification
-import spock.lang.Unroll
 
 @SpringBootTest(classes = Application.class)
 class StudentServiceSpec extends Specification {
-    @Autowired
-    private final UserService userService
+    private UserService userService
+    private UserRepository userRepository
 
-    private final STUDENTS_OF_1ST_GRADE = 5
-    private final STUDENTS_OF_2ND_GRADE = 3
+    void setup() {
+        userRepository = Mock()
+        userService = new UserServiceImpl(userRepository)
+    }
 
-    def "should return students by grade gradeId"() {
-        expect:
-        userService.getStudentsByGradeId(1).size() == STUDENTS_OF_1ST_GRADE
-        userService.getStudentsByGradeId(2).size() == STUDENTS_OF_2ND_GRADE
+    void "should call UserRepository method 'findUsersByRoleAndGradeGradeId'"() {
+        when:
+        userService.getStudentsByGradeId(1)
+
+        then:
+        1 * userRepository.findUsersByRoleAndGradeGradeId("STUDENT", 1)
     }
 }

@@ -16,6 +16,7 @@ public class Grade {
     private Integer gradeId;
 
     @Column(name = "NUMBER")
+ //   @OrderBy("number ASC")
     private String number;
 
     public Grade(String number) {

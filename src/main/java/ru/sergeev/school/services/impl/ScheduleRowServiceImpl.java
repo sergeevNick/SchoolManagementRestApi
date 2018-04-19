@@ -5,5 +5,4 @@ import ru.sergeev.school.services.ScheduleRowService;
 
 @Service
 public class ScheduleRowServiceImpl implements ScheduleRowService {
-
 }

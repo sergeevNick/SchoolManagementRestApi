@@ -1,20 +1,28 @@
 package ru.sergeev.school.services
 
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
+import ru.sergeev.school.repository.GradeRepository
+import ru.sergeev.school.services.impl.GradeServiceImpl
 import spock.lang.Specification
 
 
 @SpringBootTest(classes = Application.class)
 class GradeServiceSpec extends Specification {
-    @Autowired
-    private final GradeService gradeService
+    private GradeService gradeService
+    private GradeRepository gradeRepository
 
-    private final GRADE_LIST_SIZE = 3
+    void setup() {
+        gradeRepository = Mock()
+        gradeService = new GradeServiceImpl(gradeRepository)
+    }
 
-    def "should return all grades"() {
-        expect:
-        gradeService.listAllGrades().size() == GRADE_LIST_SIZE
+    void "should call GradeRepository method 'findAll'"() {
+        when:
+        gradeService.listAllGrades()
+
+        then:
+        gradeRepository != null
+        1 * gradeRepository.findAllByOrderByNumberAsc()
     }
 }

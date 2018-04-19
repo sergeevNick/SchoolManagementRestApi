@@ -15,22 +15,21 @@ import java.util.Set;
 
 @Service
 public class SubjectServiceImpl implements SubjectService {
-    private final SubjectRepository subjectRepository;
     private final ScheduleRepository scheduleRepository;
 
     @Autowired
-    public SubjectServiceImpl(SubjectRepository subjectRepository, ScheduleRepository scheduleRepository) {
-        this.subjectRepository = subjectRepository;
+    public SubjectServiceImpl(ScheduleRepository scheduleRepository) {
         this.scheduleRepository = scheduleRepository;
     }
 
-    @Transactional
     @Override
     public Iterable<Subject> getSubjectsByGradeId(Integer gradeId) {
         Set<Subject> subjectSet = new HashSet<>();
-        for (Schedule schedule : scheduleRepository.findSchedulesByGradeGradeId(gradeId)) {
-            for (ScheduleRow row : schedule.getRows()) {
-                subjectSet.add(row.getSubject());
+        if (scheduleRepository.findSchedulesByGradeGradeId(gradeId) != null) {
+            for (Schedule schedule : scheduleRepository.findSchedulesByGradeGradeId(gradeId)) {
+                for (ScheduleRow row : schedule.getRows()) {
+                    subjectSet.add(row.getSubject());
+                }
             }
         }
         return subjectSet;

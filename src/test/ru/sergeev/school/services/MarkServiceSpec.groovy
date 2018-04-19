@@ -1,36 +1,57 @@
-package ru.sergeev.school.services
+package sergeev.school.services
 
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
 import ru.sergeev.school.entities.Mark
+import ru.sergeev.school.entities.Subject
+import ru.sergeev.school.entities.User
 import ru.sergeev.school.repository.MarkRepository
-import spock.lang.Shared
+import ru.sergeev.school.repository.SubjectRepository
+import ru.sergeev.school.repository.UserRepository
+import ru.sergeev.school.services.MarkService
+import ru.sergeev.school.services.impl.MarkServiceImpl
 import spock.lang.Specification
-import spock.lang.Unroll
 
 import java.sql.Date
 
 @SpringBootTest(classes = Application.class)
 class MarkServiceSpec extends Specification {
-    @Autowired
-    private final MarkService markService
+    private MarkService markService
+    private MarkRepository markRepository
+    private UserRepository userRepository
+    private SubjectRepository subjectRepository
 
-    private final MARK_LIST_SIZE = 9
-
-    def "should delete last mark"() {
-        when:
-        markService.deleteMarkById(markService.listAllMarks().last().markId)
-
-        then:
-        markService.listAllMarks().size() == MARK_LIST_SIZE - 1
+    void setup() {
+        markRepository = Mock()
+        userRepository = Mock()
+        subjectRepository = Mock()
+        markService = new MarkServiceImpl(markRepository, userRepository, subjectRepository)
     }
 
-    def "should save mark"() {
+
+    void "should call MarkRepository method 'findMarksByStudentUserIdAndSubjectSubjectId'"() {
         when:
-        markService.saveMark(5, 1, 3)
+        markService.getMarksByStudentIdAndSubjectId(1, 1)
 
         then:
-        markService.listAllMarks().size() == MARK_LIST_SIZE
+        1 * markRepository.findMarksByStudentUserIdAndSubjectSubjectId(1, 1)
+    }
+
+    void "should call MarkRepository method 'delete'"() {
+        when:
+        markService.deleteMarkById(1)
+
+        then:
+        1 * markRepository.deleteMarkByMarkId(1)
+    }
+
+    void "should call MarkRepository method 'save'"() {
+        when:
+        markService.saveMark(5, 1, 1)
+
+        then:
+        1 * markRepository.save(_ as Mark)
+        1 * userRepository.findUserByUserId(1)
+        1 * subjectRepository.findSubjectBySubjectId(1)
     }
 }

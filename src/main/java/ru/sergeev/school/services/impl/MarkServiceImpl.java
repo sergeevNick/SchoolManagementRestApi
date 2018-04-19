@@ -37,7 +37,6 @@ public class MarkServiceImpl implements MarkService {
         return markRepository.findMarksByStudentUserIdAndSubjectSubjectId(studentId, subjectId);
     }
 
-    @Transactional
     @Override
     public void deleteMarkById(Integer id) {
         markRepository.deleteMarkByMarkId(id);

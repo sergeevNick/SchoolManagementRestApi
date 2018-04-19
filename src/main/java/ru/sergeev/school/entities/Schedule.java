@@ -14,15 +14,15 @@ public class Schedule {
     @Column(name = "SCHEDULE_ID")
     private Integer scheduleId;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Grade.class)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Grade.class)
     @JoinColumn(name = "GRADE_ID", nullable = false)
     private Grade grade;
 
-    @ManyToOne(fetch = FetchType.LAZY, targetEntity = Day.class)
+    @ManyToOne(fetch = FetchType.EAGER, targetEntity = Day.class)
     @JoinColumn(name = "DAY_ID", nullable = false)
     private Day day;
 
-    @OneToMany(fetch = FetchType.LAZY, targetEntity = ScheduleRow.class, mappedBy = "schedule")
+    @OneToMany(fetch = FetchType.EAGER, targetEntity = ScheduleRow.class, mappedBy = "schedule")
     @OrderBy("lesson ASC")
     private Set<ScheduleRow> rows;
 

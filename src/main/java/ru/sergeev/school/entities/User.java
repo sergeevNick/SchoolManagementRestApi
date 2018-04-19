@@ -46,6 +46,22 @@ public class User {
     @JoinColumn(name = "GRADE_ID")
     private Grade grade;
 
+    public User() {
+    }
+
+    public User(String login, String hash, String role, String firstName, String secondName, String lastName, String email, String address, Date birthDate, Grade grade) {
+        this.login = login;
+        this.hash = hash;
+        this.role = role;
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.lastName = lastName;
+        this.email = email;
+        this.address = address;
+        this.birthDate = birthDate;
+        this.grade = grade;
+    }
+
     public Integer getUserId() {
         return userId;
     }

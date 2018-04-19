@@ -5,5 +5,4 @@ import ru.sergeev.school.services.LessonService;
 
 @Service
 public class LessonServiceImpl implements LessonService {
-
 }
