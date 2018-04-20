@@ -3,16 +3,12 @@ package sergeev.school.services
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
 import ru.sergeev.school.entities.Mark
-import ru.sergeev.school.entities.Subject
-import ru.sergeev.school.entities.User
 import ru.sergeev.school.repository.MarkRepository
 import ru.sergeev.school.repository.SubjectRepository
 import ru.sergeev.school.repository.UserRepository
 import ru.sergeev.school.services.MarkService
 import ru.sergeev.school.services.impl.MarkServiceImpl
 import spock.lang.Specification
-
-import java.sql.Date
 
 @SpringBootTest(classes = Application.class)
 class MarkServiceSpec extends Specification {

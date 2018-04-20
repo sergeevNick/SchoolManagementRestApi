@@ -9,7 +9,7 @@ import spock.lang.Specification
 @SpringBootTest(classes = Application.class)
 class GradeRepositorySpec extends Specification {
     @Autowired
-    private final GradeRepository gradeRepository
+    private GradeRepository gradeRepository
 
     private final GRADE_LIST_SIZE = 3
 

@@ -10,7 +10,7 @@ import spock.lang.Specification
 @SpringBootTest(classes = Application.class)
 class SubjectRepositorySpec extends Specification {
     @Autowired
-    private final SubjectRepository subjectRepository
+    private SubjectRepository subjectRepository
 
     void "should return number of subjects from grade"() {
         expect:

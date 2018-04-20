@@ -9,7 +9,7 @@ import spock.lang.Specification
 @SpringBootTest(classes = Application.class)
 class UserRepositorySpec extends Specification {
     @Autowired
-    private final UserRepository userRepository
+    private UserRepository userRepository
 
     private final STUDENTS_OF_1ST_GRADE = 5
     private final STUDENTS_OF_2ND_GRADE = 3

@@ -1,11 +1,11 @@
-package ru.sergeev.school.services
+package sergeev.school.services
 
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
 import ru.sergeev.school.repository.GradeRepository
+import ru.sergeev.school.services.GradeService
 import ru.sergeev.school.services.impl.GradeServiceImpl
 import spock.lang.Specification
-
 
 @SpringBootTest(classes = Application.class)
 class GradeServiceSpec extends Specification {
