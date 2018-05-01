@@ -14,10 +14,10 @@ public class Subject {
     @Column(name = "SUBJECT_ID")
     private Integer subjectId;
 
-    @Column(name = "NAME")
+    @Column(name = "NAME", nullable = false)
     private String name;
 
-    @Column(name = "ROOM")
+    @Column(name = "ROOM", nullable = false)
     private Integer room;
 
     public Subject() {

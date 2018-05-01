@@ -15,10 +15,10 @@ public class Lesson {
     @Column(name = "LESSON_ID")
     private Integer lessonId;
 
-    @Column(name = "START")
+    @Column(name = "START", nullable = false)
     private Time startTime;
 
-    @Column(name = "END")
+    @Column(name = "END", nullable = false)
     private Time endTime;
 
     public Lesson() {

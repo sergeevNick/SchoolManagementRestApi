@@ -15,8 +15,7 @@ public class Grade {
     @Column(name = "GRADE_ID")
     private Integer gradeId;
 
-    @Column(name = "NUMBER")
- //   @OrderBy("number ASC")
+    @Column(name = "NUMBER", nullable = false)
     private String number;
 
     public Grade(String number) {

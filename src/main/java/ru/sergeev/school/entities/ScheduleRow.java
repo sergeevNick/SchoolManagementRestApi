@@ -22,7 +22,7 @@ public class ScheduleRow {
     private Lesson lesson;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = User.class)
-    @JoinColumn(name = "TEACHER_ID")
+    @JoinColumn(name = "TEACHER_ID", nullable = false)
     private User teacher;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Subject.class)

@@ -16,7 +16,7 @@ public class Day {
     @Column(name = "DAY_ID")
     private Integer dayId;
 
-    @Column(name = "DAY_NAME")
+    @Column(name = "DAY_NAME", nullable = false)
     private String dayName;
 
     public Day() {

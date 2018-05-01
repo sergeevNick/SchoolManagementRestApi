@@ -12,7 +12,7 @@ import java.util.Set;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "USER_ID", nullable = false, updatable = false)
+    @Column(name = "USER_ID", updatable = false)
     private Integer userId;
 
     @Column(name = "LOGIN", nullable = false)
@@ -24,16 +24,16 @@ public class User {
     @Column(name = "ROLE", nullable = false)
     private String role;
 
-    @Column(name = "FIRST_NAME")
+    @Column(name = "FIRST_NAME", nullable = false)
     private String firstName;
 
-    @Column(name = "SECOND_NAME")
+    @Column(name = "SECOND_NAME", nullable = false)
     private String secondName;
 
-    @Column(name = "LAST_NAME")
+    @Column(name = "LAST_NAME", nullable = false)
     private String lastName;
 
-    @Column(name = "EMAIL")
+    @Column(name = "EMAIL", nullable = false)
     private String email;
 
     @Column(name = "ADDRESS")

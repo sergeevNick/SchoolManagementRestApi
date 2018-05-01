@@ -14,18 +14,18 @@ public class Mark {
     @Column(name = "MARK_ID")
     private Integer markId;
 
-    @Column(name = "VALUE")
+    @Column(name = "VALUE", nullable = false)
     private Integer value;
 
-    @Column(name = "DATE")
+    @Column(name = "DATE", nullable = false)
     private Date date;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = User.class)
-    @JoinColumn(name = "STUDENT_ID")
+    @JoinColumn(name = "STUDENT_ID", nullable = false)
     private User student;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Subject.class)
-    @JoinColumn(name = "SUBJECT_ID")
+    @JoinColumn(name = "SUBJECT_ID", nullable = false)
     private Subject subject;
 
     public Mark(Integer value) {
