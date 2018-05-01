@@ -1,4 +1,4 @@
-package sergeev.school.services
+package ru.sergeev.school.services
 
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
@@ -17,7 +17,7 @@ class MarkServiceSpec extends Specification {
     private UserRepository userRepository
     private SubjectRepository subjectRepository
 
-    void setup() {
+    def setup() {
         markRepository = Mock()
         userRepository = Mock()
         subjectRepository = Mock()
@@ -25,7 +25,7 @@ class MarkServiceSpec extends Specification {
     }
 
 
-    void "should call MarkRepository method 'findMarksByStudentUserIdAndSubjectSubjectId'"() {
+    def "should call MarkRepository method 'findMarksByStudentUserIdAndSubjectSubjectId'"() {
         when:
         markService.getMarksByStudentIdAndSubjectId(1, 1)
 
@@ -33,7 +33,7 @@ class MarkServiceSpec extends Specification {
         1 * markRepository.findMarksByStudentUserIdAndSubjectSubjectId(1, 1)
     }
 
-    void "should call MarkRepository method 'delete'"() {
+    def "should call MarkRepository method 'delete'"() {
         when:
         markService.deleteMarkById(1)
 
@@ -41,7 +41,7 @@ class MarkServiceSpec extends Specification {
         1 * markRepository.deleteMarkByMarkId(1)
     }
 
-    void "should call MarkRepository method 'save'"() {
+    def "should call MarkRepository method 'save'"() {
         when:
         markService.saveMark(5, 1, 1)
 

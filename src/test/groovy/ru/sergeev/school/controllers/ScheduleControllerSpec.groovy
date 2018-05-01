@@ -1,4 +1,4 @@
-package sergeev.school.controllers
+package ru.sergeev.school.controllers
 
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
@@ -16,14 +16,14 @@ class ScheduleControllerSpec extends Specification {
     private ScheduleController scheduleController
     private ScheduleService scheduleService
 
-    void setup() {
+    def setup() {
         scheduleService = Mock()
         mockView = Mock()
         scheduleController = new ScheduleController(scheduleService)
         mockMvc = standaloneSetup(scheduleController).setSingleView(mockView).build()
     }
 
-    void "should call ScheduleService method 'getSchedulesByGradeId' and return status 200"() {
+    def "should call ScheduleService method 'getSchedulesByGradeId' and return status 200"() {
         when:
         def response = mockMvc.perform(MockMvcRequestBuilders.get("/grades/1/schedule"))
 
@@ -32,7 +32,7 @@ class ScheduleControllerSpec extends Specification {
         response.andExpect(MockMvcResultMatchers.status().isOk())
     }
 
-    void "should return status 400 when url is bad"() {
+    def "should return status 400 when url is bad"() {
         when:
         def response = mockMvc.perform(MockMvcRequestBuilders.get("/grades/1/schedules"))
 

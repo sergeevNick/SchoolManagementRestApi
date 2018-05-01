@@ -1,4 +1,4 @@
-package sergeev.school.services
+package ru.sergeev.school.services
 
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
@@ -12,12 +12,12 @@ class SubjectServiceSpec extends Specification {
     private SubjectService subjectService
     private ScheduleRepository scheduleRepository
 
-    void setup() {
+    def setup() {
         scheduleRepository = Mock()
         subjectService = new SubjectServiceImpl(scheduleRepository)
     }
 
-    void "should call ScheduleRepository method 'findSchedulesByGradeGradeId'"() {
+    def "should call ScheduleRepository method 'findSchedulesByGradeGradeId'"() {
         when:
         subjectService.getSubjectsByGradeId(1)
 

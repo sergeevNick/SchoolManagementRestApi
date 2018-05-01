@@ -1,4 +1,4 @@
-package sergeev.school.controllers
+package ru.sergeev.school.controllers
 
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
@@ -16,14 +16,14 @@ class StudentControllerSpec extends Specification {
     private StudentController studentController
     private UserService userService
 
-    void setup() {
+    def setup() {
         userService = Mock()
         mockView = Mock()
         studentController = new StudentController(userService)
         mockMvc = standaloneSetup(studentController).setSingleView(mockView).build()
     }
 
-    void "should call UserService method 'getStudentsByGradeId' and return status 200"() {
+    def "should call UserService method 'getStudentsByGradeId' and return status 200"() {
         when:
         def response = mockMvc.perform(MockMvcRequestBuilders.get("/grades/1/students"))
 
@@ -32,7 +32,7 @@ class StudentControllerSpec extends Specification {
         response.andExpect(MockMvcResultMatchers.status().isOk())
     }
 
-    void "should return status 400 when url is bad"() {
+    def "should return status 400 when url is bad"() {
         when:
         def response = mockMvc.perform(MockMvcRequestBuilders.get("/grades/1/student"))
 

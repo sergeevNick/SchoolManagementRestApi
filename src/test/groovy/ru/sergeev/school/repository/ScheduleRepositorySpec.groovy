@@ -1,4 +1,4 @@
-package sergeev.school.repository
+package ru.sergeev.school.repository
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
@@ -18,5 +18,14 @@ class ScheduleRepositorySpec extends Specification {
         expect:
         scheduleRepository.findSchedulesByGradeGradeId(1).size() == SCHEDULES_OF_1ST_GRADE
         scheduleRepository.findSchedulesByGradeGradeId(2).size() == SCHEDULES_OF_2ND_GRADE
+    }
+
+    def "should return empty schedule when gradeId is not exist"() {
+        when:
+        Object response = scheduleRepository.findSchedulesByGradeGradeId(999999)
+
+        then:
+        notThrown(Exception)
+        response.isEmpty()
     }
 }

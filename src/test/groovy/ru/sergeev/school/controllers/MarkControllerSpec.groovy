@@ -1,11 +1,10 @@
-package sergeev.school.controllers
+package ru.sergeev.school.controllers
 
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.web.servlet.View
-import ru.sergeev.school.controllers.MarkController
 import ru.sergeev.school.services.MarkService
 import spock.lang.Specification
 
@@ -17,14 +16,14 @@ class MarkControllerSpec extends Specification {
     private MarkController markController
     private MarkService markService
 
-    void setup() {
+    def setup() {
         markService = Mock()
         mockView = Mock()
         markController = new MarkController(markService)
         mockMvc = standaloneSetup(markController).setSingleView(mockView).build()
     }
 
-    void "should call MarkService method 'saveMark' and return status 200"() {
+    def "should call MarkService method 'saveMark' and return status 200"() {
         when:
         def response = mockMvc.perform(MockMvcRequestBuilders.post("/marks/students/1/subjects/1")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -36,7 +35,7 @@ class MarkControllerSpec extends Specification {
         response.andExpect(MockMvcResultMatchers.status().isOk())
     }
 
-    void "should call MarkService method 'deleteMarkById' and return status 200"() {
+    def "should call MarkService method 'deleteMarkById' and return status 200"() {
         when:
         def response = mockMvc.perform(MockMvcRequestBuilders.delete("/marks/1"))
 

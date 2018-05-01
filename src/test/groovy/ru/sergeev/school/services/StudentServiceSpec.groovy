@@ -1,4 +1,4 @@
-package sergeev.school.services
+package ru.sergeev.school.services
 
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
@@ -12,12 +12,12 @@ class StudentServiceSpec extends Specification {
     private UserService userService
     private UserRepository userRepository
 
-    void setup() {
+    def setup() {
         userRepository = Mock()
         userService = new UserServiceImpl(userRepository)
     }
 
-    void "should call UserRepository method 'findUsersByRoleAndGradeGradeId'"() {
+    def "should call UserRepository method 'findUsersByRoleAndGradeGradeId'"() {
         when:
         userService.getStudentsByGradeId(1)
 

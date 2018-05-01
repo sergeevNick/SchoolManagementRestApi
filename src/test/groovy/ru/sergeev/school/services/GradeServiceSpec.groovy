@@ -1,4 +1,4 @@
-package sergeev.school.services
+package ru.sergeev.school.services
 
 import org.springframework.boot.test.context.SpringBootTest
 import ru.sergeev.school.Application
@@ -12,12 +12,12 @@ class GradeServiceSpec extends Specification {
     private GradeService gradeService
     private GradeRepository gradeRepository
 
-    void setup() {
+    def setup() {
         gradeRepository = Mock()
         gradeService = new GradeServiceImpl(gradeRepository)
     }
 
-    void "should call GradeRepository method 'findAll'"() {
+    def "should call GradeRepository method 'findAll'"() {
         when:
         gradeService.listAllGrades()
 
