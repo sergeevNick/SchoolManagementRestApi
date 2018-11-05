@@ -2,7 +2,6 @@ package ru.sergeev.school.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import ru.sergeev.school.entities.Mark;
 import ru.sergeev.school.repository.MarkRepository;
 import ru.sergeev.school.repository.SubjectRepository;
@@ -10,7 +9,6 @@ import ru.sergeev.school.repository.UserRepository;
 import ru.sergeev.school.services.MarkService;
 
 import java.sql.Date;
-
 
 @Service
 public class MarkServiceImpl implements MarkService {
