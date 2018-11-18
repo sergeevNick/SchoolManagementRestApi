@@ -52,6 +52,15 @@ public class Mark {
         return date;
     }
 
+    // TODO: it could be an id instead of class
+    public User getStudent() {
+        return student;
+    }
+
+    public Subject getSubject() {
+        return subject;
+    }
+
     public void setStudent(User student) {
         this.student = student;
     }
