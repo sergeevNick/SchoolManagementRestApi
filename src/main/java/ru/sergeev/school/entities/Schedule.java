@@ -29,6 +29,10 @@ public class Schedule {
     public Schedule() {
     }
 
+    public Grade getGrade() {
+        return grade;
+    }
+
     public Set<ScheduleRow> getRows() {
         return rows;
     }

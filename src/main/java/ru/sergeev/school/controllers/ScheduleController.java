@@ -22,7 +22,7 @@ public class ScheduleController {
     }
 
     @ApiOperation(value = "Provides a grade's schedule by grade id")
-    @RequestMapping(value = "/grades/{gradeId}/schedule", method = RequestMethod.GET)
+    @RequestMapping(value = "/schedules/grades/{gradeId}", method = RequestMethod.GET)
     public ResponseEntity<Iterable<Schedule>> getScheduleByGradeId(@PathVariable(value = "gradeId") Integer gradeId) {
         return ResponseEntity.ok(scheduleService.getSchedulesByGradeId(gradeId));
     }
